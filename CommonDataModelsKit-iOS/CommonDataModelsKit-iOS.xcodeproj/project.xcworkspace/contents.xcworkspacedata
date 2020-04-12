@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TapCommonDataModelsKits.xcodeproj">
+      location = "self:CommonDataModelsKit-iOS.xcodeproj">
    </FileRef>
 </Workspace>
