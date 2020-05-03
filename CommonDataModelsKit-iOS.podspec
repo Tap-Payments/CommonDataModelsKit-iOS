@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CommonDataModelsKit-iOS"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "Common data models and enums between different kits"
 
   # This description is used to generate tags and improve search results.
@@ -104,7 +104,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  spec.resources = "CommonDataModelsKit-iOS/CommonDataModelsKit-iOS/Core/assets/**/*.{json}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
