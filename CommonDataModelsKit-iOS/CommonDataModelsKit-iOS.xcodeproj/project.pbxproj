@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8798861245EDD1D00D643A2 /* DefaultTapLocalisation.json in Resources */ = {isa = PBXBuildFile; fileRef = E8798860245EDD1D00D643A2 /* DefaultTapLocalisation.json */; };
+		E8798865245EDDA400D643A2 /* TapCommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8798864245EDDA400D643A2 /* TapCommonConstants.swift */; };
 		E8B8CB852442E0730060E0F3 /* CommonDataModelsKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B8CB832442E0730060E0F3 /* CommonDataModelsKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8E2442E0990060E0F3 /* TapCurrencyCode.swift */; };
 		E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8798860245EDD1D00D643A2 /* DefaultTapLocalisation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultTapLocalisation.json; sourceTree = "<group>"; };
+		E8798864245EDDA400D643A2 /* TapCommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCommonConstants.swift; sourceTree = "<group>"; };
 		E8B8CB802442E0730060E0F3 /* CommonDataModelsKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonDataModelsKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B8CB832442E0730060E0F3 /* CommonDataModelsKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModelsKit_iOS.h; sourceTree = "<group>"; };
 		E8B8CB842442E0730060E0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E8798862245EDD2200D643A2 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E8798860245EDD1D00D643A2 /* DefaultTapLocalisation.json */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		E8798863245EDD9100D643A2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E8798864245EDDA400D643A2 /* TapCommonConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		E8B8CB762442E0730060E0F3 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +82,8 @@
 		E8B8CB8B2442E07C0060E0F3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E8798863245EDD9100D643A2 /* Constants */,
+				E8798862245EDD2200D643A2 /* assets */,
 				E8B8CB8D2442E0870060E0F3 /* enums */,
 				E8B8CB8C2442E0820060E0F3 /* models */,
 			);
@@ -155,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8798861245EDD1D00D643A2 /* DefaultTapLocalisation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +190,7 @@
 			files = (
 				E8B8CB932442E09F0060E0F3 /* TapCard.swift in Sources */,
 				E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */,
+				E8798865245EDDA400D643A2 /* TapCommonConstants.swift in Sources */,
 				E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +323,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G46S76PUH4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -326,6 +351,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G46S76PUH4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
