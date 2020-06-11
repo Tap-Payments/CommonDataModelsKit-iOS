@@ -18,7 +18,32 @@
 		E8C590A2249203B000E03424 /* TapCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5909B249203B000E03424 /* TapCurrencyFormatter.swift */; };
 		E8C590A3249203B000E03424 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5909C249203B000E03424 /* NumberFormatter.swift */; };
 		E8C590A4249203B000E03424 /* CurrencyLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5909D249203B000E03424 /* CurrencyLocale.swift */; };
+		E8C590AE2492059B00E03424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590AD2492059B00E03424 /* AppDelegate.swift */; };
+		E8C590B02492059B00E03424 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590AF2492059B00E03424 /* SceneDelegate.swift */; };
+		E8C590B22492059B00E03424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590B12492059B00E03424 /* ViewController.swift */; };
+		E8C590B52492059B00E03424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C590B32492059B00E03424 /* Main.storyboard */; };
+		E8C590B72492059E00E03424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8C590B62492059E00E03424 /* Assets.xcassets */; };
+		E8C590BA2492059E00E03424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C590B82492059E00E03424 /* LaunchScreen.storyboard */; };
+		E8C590C52492059E00E03424 /* CommonDataModelsExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590C42492059E00E03424 /* CommonDataModelsExampleTests.swift */; };
+		E8C590D02492059E00E03424 /* CommonDataModelsExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590CF2492059E00E03424 /* CommonDataModelsExampleUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8C590C12492059E00E03424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B8CB772442E0730060E0F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8C590AA2492059B00E03424;
+			remoteInfo = CommonDataModelsExample;
+		};
+		E8C590CC2492059E00E03424 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B8CB772442E0730060E0F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8C590AA2492059B00E03424;
+			remoteInfo = CommonDataModelsExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E8798860245EDD1D00D643A2 /* DefaultTapLocalisation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DefaultTapLocalisation.json; sourceTree = "<group>"; };
@@ -34,10 +59,45 @@
 		E8C5909B249203B000E03424 /* TapCurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCurrencyFormatter.swift; sourceTree = "<group>"; };
 		E8C5909C249203B000E03424 /* NumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
 		E8C5909D249203B000E03424 /* CurrencyLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyLocale.swift; sourceTree = "<group>"; };
+		E8C590AB2492059B00E03424 /* CommonDataModelsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonDataModelsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C590AD2492059B00E03424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8C590AF2492059B00E03424 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8C590B12492059B00E03424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8C590B42492059B00E03424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8C590B62492059E00E03424 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8C590B92492059E00E03424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8C590BB2492059E00E03424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C590C02492059E00E03424 /* CommonDataModelsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonDataModelsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C590C42492059E00E03424 /* CommonDataModelsExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataModelsExampleTests.swift; sourceTree = "<group>"; };
+		E8C590C62492059E00E03424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C590CB2492059E00E03424 /* CommonDataModelsExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonDataModelsExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C590CF2492059E00E03424 /* CommonDataModelsExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonDataModelsExampleUITests.swift; sourceTree = "<group>"; };
+		E8C590D12492059E00E03424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E8B8CB7D2442E0730060E0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C590A82492059B00E03424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C590BD2492059E00E03424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C590C82492059E00E03424 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,6 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				E8B8CB822442E0730060E0F3 /* CommonDataModelsKit-iOS */,
+				E8C590AC2492059B00E03424 /* CommonDataModelsExample */,
+				E8C590C32492059E00E03424 /* CommonDataModelsExampleTests */,
+				E8C590CE2492059E00E03424 /* CommonDataModelsExampleUITests */,
 				E8B8CB812442E0730060E0F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				E8B8CB802442E0730060E0F3 /* CommonDataModelsKit_iOS.framework */,
+				E8C590AB2492059B00E03424 /* CommonDataModelsExample.app */,
+				E8C590C02492059E00E03424 /* CommonDataModelsExampleTests.xctest */,
+				E8C590CB2492059E00E03424 /* CommonDataModelsExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +204,38 @@
 			path = AmountedCurrencyFormatter;
 			sourceTree = "<group>";
 		};
+		E8C590AC2492059B00E03424 /* CommonDataModelsExample */ = {
+			isa = PBXGroup;
+			children = (
+				E8C590AD2492059B00E03424 /* AppDelegate.swift */,
+				E8C590AF2492059B00E03424 /* SceneDelegate.swift */,
+				E8C590B12492059B00E03424 /* ViewController.swift */,
+				E8C590B32492059B00E03424 /* Main.storyboard */,
+				E8C590B62492059E00E03424 /* Assets.xcassets */,
+				E8C590B82492059E00E03424 /* LaunchScreen.storyboard */,
+				E8C590BB2492059E00E03424 /* Info.plist */,
+			);
+			path = CommonDataModelsExample;
+			sourceTree = "<group>";
+		};
+		E8C590C32492059E00E03424 /* CommonDataModelsExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8C590C42492059E00E03424 /* CommonDataModelsExampleTests.swift */,
+				E8C590C62492059E00E03424 /* Info.plist */,
+			);
+			path = CommonDataModelsExampleTests;
+			sourceTree = "<group>";
+		};
+		E8C590CE2492059E00E03424 /* CommonDataModelsExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8C590CF2492059E00E03424 /* CommonDataModelsExampleUITests.swift */,
+				E8C590D12492059E00E03424 /* Info.plist */,
+			);
+			path = CommonDataModelsExampleUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -170,18 +268,83 @@
 			productReference = E8B8CB802442E0730060E0F3 /* CommonDataModelsKit_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		E8C590AA2492059B00E03424 /* CommonDataModelsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C590D22492059E00E03424 /* Build configuration list for PBXNativeTarget "CommonDataModelsExample" */;
+			buildPhases = (
+				E8C590A72492059B00E03424 /* Sources */,
+				E8C590A82492059B00E03424 /* Frameworks */,
+				E8C590A92492059B00E03424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommonDataModelsExample;
+			productName = CommonDataModelsExample;
+			productReference = E8C590AB2492059B00E03424 /* CommonDataModelsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8C590BF2492059E00E03424 /* CommonDataModelsExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C590D52492059E00E03424 /* Build configuration list for PBXNativeTarget "CommonDataModelsExampleTests" */;
+			buildPhases = (
+				E8C590BC2492059E00E03424 /* Sources */,
+				E8C590BD2492059E00E03424 /* Frameworks */,
+				E8C590BE2492059E00E03424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8C590C22492059E00E03424 /* PBXTargetDependency */,
+			);
+			name = CommonDataModelsExampleTests;
+			productName = CommonDataModelsExampleTests;
+			productReference = E8C590C02492059E00E03424 /* CommonDataModelsExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8C590CA2492059E00E03424 /* CommonDataModelsExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8C590D82492059E00E03424 /* Build configuration list for PBXNativeTarget "CommonDataModelsExampleUITests" */;
+			buildPhases = (
+				E8C590C72492059E00E03424 /* Sources */,
+				E8C590C82492059E00E03424 /* Frameworks */,
+				E8C590C92492059E00E03424 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8C590CD2492059E00E03424 /* PBXTargetDependency */,
+			);
+			name = CommonDataModelsExampleUITests;
+			productName = CommonDataModelsExampleUITests;
+			productReference = E8C590CB2492059E00E03424 /* CommonDataModelsExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E8B8CB772442E0730060E0F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Tap Payments";
 				TargetAttributes = {
 					E8B8CB7F2442E0730060E0F3 = {
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
+					};
+					E8C590AA2492059B00E03424 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					E8C590BF2492059E00E03424 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E8C590AA2492059B00E03424;
+					};
+					E8C590CA2492059E00E03424 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = E8C590AA2492059B00E03424;
 					};
 				};
 			};
@@ -199,6 +362,9 @@
 			projectRoot = "";
 			targets = (
 				E8B8CB7F2442E0730060E0F3 /* CommonDataModelsKit-iOS */,
+				E8C590AA2492059B00E03424 /* CommonDataModelsExample */,
+				E8C590BF2492059E00E03424 /* CommonDataModelsExampleTests */,
+				E8C590CA2492059E00E03424 /* CommonDataModelsExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,6 +375,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8798861245EDD1D00D643A2 /* DefaultTapLocalisation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C590A92492059B00E03424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C590BA2492059E00E03424 /* LaunchScreen.storyboard in Resources */,
+				E8C590B72492059E00E03424 /* Assets.xcassets in Resources */,
+				E8C590B52492059B00E03424 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C590BE2492059E00E03424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C590C92492059E00E03424 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +421,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8C590A72492059B00E03424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C590B22492059B00E03424 /* ViewController.swift in Sources */,
+				E8C590AE2492059B00E03424 /* AppDelegate.swift in Sources */,
+				E8C590B02492059B00E03424 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C590BC2492059E00E03424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C590C52492059E00E03424 /* CommonDataModelsExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C590C72492059E00E03424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C590D02492059E00E03424 /* CommonDataModelsExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8C590C22492059E00E03424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8C590AA2492059B00E03424 /* CommonDataModelsExample */;
+			targetProxy = E8C590C12492059E00E03424 /* PBXContainerItemProxy */;
+		};
+		E8C590CD2492059E00E03424 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8C590AA2492059B00E03424 /* CommonDataModelsExample */;
+			targetProxy = E8C590CC2492059E00E03424 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8C590B32492059B00E03424 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8C590B42492059B00E03424 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8C590B82492059E00E03424 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8C590B92492059E00E03424 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E8B8CB862442E0730060E0F3 /* Debug */ = {
@@ -409,6 +657,130 @@
 			};
 			name = Release;
 		};
+		E8C590D32492059E00E03424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				INFOPLIST_FILE = CommonDataModelsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tap.company.CommonDataModelsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8C590D42492059E00E03424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				INFOPLIST_FILE = CommonDataModelsExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tap.company.CommonDataModelsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8C590D62492059E00E03424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				INFOPLIST_FILE = CommonDataModelsExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tap.company.CommonDataModelsExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommonDataModelsExample.app/CommonDataModelsExample";
+			};
+			name = Debug;
+		};
+		E8C590D72492059E00E03424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				INFOPLIST_FILE = CommonDataModelsExampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tap.company.CommonDataModelsExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CommonDataModelsExample.app/CommonDataModelsExample";
+			};
+			name = Release;
+		};
+		E8C590D92492059E00E03424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				INFOPLIST_FILE = CommonDataModelsExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tap.company.CommonDataModelsExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CommonDataModelsExample;
+			};
+			name = Debug;
+		};
+		E8C590DA2492059E00E03424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G46S76PUH4;
+				INFOPLIST_FILE = CommonDataModelsExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tap.company.CommonDataModelsExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CommonDataModelsExample;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -426,6 +798,33 @@
 			buildConfigurations = (
 				E8B8CB892442E0730060E0F3 /* Debug */,
 				E8B8CB8A2442E0730060E0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C590D22492059E00E03424 /* Build configuration list for PBXNativeTarget "CommonDataModelsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C590D32492059E00E03424 /* Debug */,
+				E8C590D42492059E00E03424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C590D52492059E00E03424 /* Build configuration list for PBXNativeTarget "CommonDataModelsExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C590D62492059E00E03424 /* Debug */,
+				E8C590D72492059E00E03424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8C590D82492059E00E03424 /* Build configuration list for PBXNativeTarget "CommonDataModelsExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8C590D92492059E00E03424 /* Debug */,
+				E8C590DA2492059E00E03424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
