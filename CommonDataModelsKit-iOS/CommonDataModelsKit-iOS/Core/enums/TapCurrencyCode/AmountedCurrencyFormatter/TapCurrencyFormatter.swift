@@ -17,6 +17,7 @@ public protocol TapCurrencyFormatterProtocol {
     var minValue: Double? { get set }
     var initialText: String { get }
     var currencySymbol: String { get set }
+    var currencyCodeSpace: Bool { get set }
     
     func string(from double: Double?) -> String?
     func unformatted(string: String) -> String?
@@ -26,6 +27,10 @@ public protocol TapCurrencyFormatterProtocol {
 /// Tap Currency formatter responsible for formatting a given number to its correct market representation of the selected currency with many options
 
 public class TapCurrencyFormatter: TapCurrencyFormatterProtocol {
+    
+    /// Indicates a space between currency code and amount or not. $ 100 or $100
+    public var currencyCodeSpace: Bool = false
+    
     
     /// Set the locale to retrieve the currency from
     /// You can pass a Swift type Locale or one of the
@@ -253,7 +258,9 @@ extension TapCurrencyFormatter {
     /// - Returns: formatted currency string.
     public func string(from double: Double?) -> String? {
         let validValue = getAdjustedForDefinedInterval(value: double)
-        return numberFormatter.string(from: validValue)
+        let formattedValue = numberFormatter.string(from: validValue)
+        
+        return currencyCodeSpace ? formattedValue : formattedValue?.replacingOccurrences(of: " ", with: "")
     }
     
     /// Returns a double from a string that represents a numerical value.
