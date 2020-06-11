@@ -17,6 +17,7 @@
 		E8C590EA24920D5600E03424 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590E924920D5600E03424 /* String.swift */; };
 		E8C590EC24920D7000E03424 /* TapCurrencyLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */; };
 		E8C590EE24920DB200E03424 /* TapAmountedCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */; };
+		E8C590FD2492393700E03424 /* TransactionItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590FC2492393700E03424 /* TransactionItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E8C590E924920D5600E03424 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCurrencyLocale.swift; sourceTree = "<group>"; };
 		E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAmountedCurrencyFormatter.swift; sourceTree = "<group>"; };
+		E8C590FC2492393700E03424 /* TransactionItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		E8B8CB8C2442E0820060E0F3 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				E8C590FC2492393700E03424 /* TransactionItemModel.swift */,
 				E8C590942491FDB900E03424 /* MerchantModel.swift */,
 				E8B8CB922442E09F0060E0F3 /* TapCard.swift */,
 			);
@@ -210,6 +213,7 @@
 			files = (
 				E8C590EA24920D5600E03424 /* String.swift in Sources */,
 				E8B8CB932442E09F0060E0F3 /* TapCard.swift in Sources */,
+				E8C590FD2492393700E03424 /* TransactionItemModel.swift in Sources */,
 				E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */,
 				E8798865245EDDA400D643A2 /* TapCommonConstants.swift in Sources */,
 				E8C590952491FDB900E03424 /* MerchantModel.swift in Sources */,

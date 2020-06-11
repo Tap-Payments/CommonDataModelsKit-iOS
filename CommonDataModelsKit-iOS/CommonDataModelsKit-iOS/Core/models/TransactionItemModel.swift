@@ -12,24 +12,34 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 */
 
 import Foundation
-/// A struct that creates a Merchant Model
-public struct MerchantModel : Codable {
-    /// The merchant business name
-	public let name : String?
-    /// The merchant business logo url
-	public let logo : String?
+/// Struct to hold info about an item in a transaction
+public struct TransactionItemModel : Codable {
+    /// The displayed title of the item
+	public let title : String?
+    /// The displayed description of the item
+	public let description : String?
+    /// The original price of the item
+	public let price : Double?
+    /// The discount applied
+	public let discount : Double?
+    /// How many insances of this item are there
+	public let quantity : Double?
 
 	enum CodingKeys: String, CodingKey {
-		case name = "name"
-		case logo = "logo"
+
+		case title = "title"
+		case description = "description"
+		case price = "price"
+		case discount = "discount"
+		case quantity = "quantity"
 	}
 
-	public init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
-		name = try values.decodeIfPresent(String.self, forKey: .name)
-		logo = try values.decodeIfPresent(String.self, forKey: .logo)
+		title = try values.decodeIfPresent(String.self, forKey: .title)
+		description = try values.decodeIfPresent(String.self, forKey: .description)
+		price = try values.decodeIfPresent(Double.self, forKey: .price)
+		discount = try values.decodeIfPresent(Double.self, forKey: .discount)
+		quantity = try values.decodeIfPresent(Double.self, forKey: .quantity)
 	}
 }
-
-
-
