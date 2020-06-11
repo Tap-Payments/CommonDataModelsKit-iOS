@@ -1,5 +1,5 @@
 //
-//  CurrencyFormatter.swift
+//  TapCurrencyFormatter.swift
 //  TapCommonDataModelsKits
 //
 //  Created by Osama Rabie on 11/06/2020.
@@ -27,7 +27,7 @@ public protocol TapCurrencyFormatterProtocol {
 /// Tap Currency formatter responsible for formatting a given number to its correct market representation of the selected currency with many options
 
 public class TapCurrencyFormatter: TapCurrencyFormatterProtocol {
-    
+     
     /// Indicates a space between currency code and amount or not. $ 100 or $100
     public var currencyCodeSpace: Bool = false
     

@@ -1,5 +1,5 @@
 //
-//  CurrencyFormatter.swift
+//  String.swift
 //  TapCommonDataModelsKits
 //
 //  Created by Osama Rabie on 11/06/2020.
