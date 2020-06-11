@@ -1,8 +1,8 @@
 //
 //  String.swift
-//  TapCommonDataModelsKits
+//  CommonDataModelsKit-iOS
 //
-//  Created by Osama Rabie on 11/06/2020.
+//  Created by Osama Rabie on 6/11/20.
 //  Copyright © 2020 Tap Payments. All rights reserved.
 //
 
@@ -18,7 +18,7 @@ public protocol CurrencyString {
 
 ///Currency String Extension
 extension String: CurrencyString {
-
+    
     // MARK: Properties
     
     /// Informs with the string represents the value of zero
@@ -30,7 +30,7 @@ extension String: CurrencyString {
     public var hasNumbers: Bool {
         return numeralFormat().count > 0
     }
-
+    
     /// The offset from end index to the index _right after_ the last number in the String.
     /// e.g. For the String "123some", the last number position is 4, because from the _end index_ to the index of _3_
     /// there is an offset of 4, "e, m, o and s".
@@ -39,7 +39,7 @@ extension String: CurrencyString {
         let indexAfterLastNumber = index(after: indexOfLastNumber)
         return distance(from: endIndex, to: indexAfterLastNumber)
     }
-
+    
     // MARK: Functions
     
     /// Updates a currency string decimal separator position based on
@@ -66,4 +66,18 @@ extension String: CurrencyString {
 
 extension String {
     public static let negativeSymbol = "-"
+}
+
+
+
+///Currency Number Formatter Extension
+public extension NumberFormatter {
+    
+    /// Creates a string representable from a double value
+    func string(from doubleValue: Double?) -> String? {
+        if let doubleValue = doubleValue {
+            return string(from: NSNumber(value: doubleValue))
+        }
+        return nil
+    }
 }

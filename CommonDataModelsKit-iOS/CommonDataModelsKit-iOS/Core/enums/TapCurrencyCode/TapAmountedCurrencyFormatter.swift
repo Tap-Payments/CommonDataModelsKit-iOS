@@ -1,15 +1,15 @@
 //
-//  TapCurrencyFormatter.swift
-//  TapCommonDataModelsKits
+//  TapAmountedCurrencyFormatter.swift
+//  CommonDataModelsKit-iOS
 //
-//  Created by Osama Rabie on 11/06/2020.
+//  Created by Osama Rabie on 6/11/20.
 //  Copyright © 2020 Tap Payments. All rights reserved.
 //
 
-
+import Foundation
 import Foundation
 /// The methods to be implemented by the Currency Formatter
-public protocol TapCurrencyFormatterProtocol {
+public protocol TapAmountedCurrencyFormatterProtocol {
     var numberFormatter: NumberFormatter! { get }
     var maxDigitsCount: Int { get }
     var decimalDigits: Int { get set }
@@ -26,8 +26,8 @@ public protocol TapCurrencyFormatterProtocol {
 }
 /// Tap Currency formatter responsible for formatting a given number to its correct market representation of the selected currency with many options
 
-public class TapCurrencyFormatter: TapCurrencyFormatterProtocol {
-     
+public class TapAmountedCurrencyFormatter: TapAmountedCurrencyFormatterProtocol {
+    
     /// Indicates a space between currency code and amount or not. $ 100 or $100
     public var currencyCodeSpace: Bool = false
     
@@ -231,7 +231,7 @@ public class TapCurrencyFormatter: TapCurrencyFormatterProtocol {
     //MARK: - INIT
     
     /// Handler to initialize a new style.
-    public typealias InitHandler = ((TapCurrencyFormatter) -> (Void))
+    public typealias InitHandler = ((TapAmountedCurrencyFormatter) -> (Void))
     
     /// Initialize a new currency formatter with optional configuration handler callback.
     ///
@@ -250,7 +250,7 @@ public class TapCurrencyFormatter: TapCurrencyFormatterProtocol {
 }
 
 // MARK: Format
-extension TapCurrencyFormatter {
+extension TapAmountedCurrencyFormatter {
     
     /// Returns a currency string from a given double value.
     ///
@@ -281,7 +281,7 @@ extension TapCurrencyFormatter {
     }
 }
 
-extension TapCurrencyFormatter {
+extension TapAmountedCurrencyFormatter {
     
     /// Returns the update of an already formatted string, replacing its decimal separator
     /// and adjusting it to formater's min and max values if needed.

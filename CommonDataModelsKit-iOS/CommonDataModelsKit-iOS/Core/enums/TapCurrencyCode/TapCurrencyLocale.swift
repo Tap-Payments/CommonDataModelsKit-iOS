@@ -1,8 +1,8 @@
 //
-//  CurrencyLocale.swift
-//  TapCommonDataModelsKits
+//  TapCurrencyLocale.swift
+//  CommonDataModelsKit-iOS
 //
-//  Created by Osama Rabie on 11/06/2020.
+//  Created by Osama Rabie on 6/11/20.
 //  Copyright © 2020 Tap Payments. All rights reserved.
 //
 

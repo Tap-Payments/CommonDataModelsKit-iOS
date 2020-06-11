@@ -14,10 +14,9 @@
 		E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */; };
 		E8B8CB932442E09F0060E0F3 /* TapCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB922442E09F0060E0F3 /* TapCard.swift */; };
 		E8C590952491FDB900E03424 /* MerchantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590942491FDB900E03424 /* MerchantModel.swift */; };
-		E8C590E124920BF200E03424 /* CurrencyLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590DD24920BF200E03424 /* CurrencyLocale.swift */; };
-		E8C590E224920BF200E03424 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590DE24920BF200E03424 /* String.swift */; };
-		E8C590E324920BF200E03424 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590DF24920BF200E03424 /* NumberFormatter.swift */; };
-		E8C590E424920BF200E03424 /* TapCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590E024920BF200E03424 /* TapCurrencyFormatter.swift */; };
+		E8C590EA24920D5600E03424 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590E924920D5600E03424 /* String.swift */; };
+		E8C590EC24920D7000E03424 /* TapCurrencyLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */; };
+		E8C590EE24920DB200E03424 /* TapAmountedCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +29,9 @@
 		E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCountryCode.swift; sourceTree = "<group>"; };
 		E8B8CB922442E09F0060E0F3 /* TapCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCard.swift; sourceTree = "<group>"; };
 		E8C590942491FDB900E03424 /* MerchantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantModel.swift; sourceTree = "<group>"; };
-		E8C590DD24920BF200E03424 /* CurrencyLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyLocale.swift; sourceTree = "<group>"; };
-		E8C590DE24920BF200E03424 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		E8C590DF24920BF200E03424 /* NumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
-		E8C590E024920BF200E03424 /* TapCurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCurrencyFormatter.swift; sourceTree = "<group>"; };
+		E8C590E924920D5600E03424 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCurrencyLocale.swift; sourceTree = "<group>"; };
+		E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAmountedCurrencyFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,21 +119,12 @@
 		E8C590972492039500E03424 /* TapCurrencyCode */ = {
 			isa = PBXGroup;
 			children = (
-				E8C59098249203A100E03424 /* AmountedCurrencyFormatter */,
+				E8C590E924920D5600E03424 /* String.swift */,
+				E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */,
+				E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */,
 				E8B8CB8E2442E0990060E0F3 /* TapCurrencyCode.swift */,
 			);
 			path = TapCurrencyCode;
-			sourceTree = "<group>";
-		};
-		E8C59098249203A100E03424 /* AmountedCurrencyFormatter */ = {
-			isa = PBXGroup;
-			children = (
-				E8C590DD24920BF200E03424 /* CurrencyLocale.swift */,
-				E8C590DF24920BF200E03424 /* NumberFormatter.swift */,
-				E8C590DE24920BF200E03424 /* String.swift */,
-				E8C590E024920BF200E03424 /* TapCurrencyFormatter.swift */,
-			);
-			path = AmountedCurrencyFormatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,15 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8C590E124920BF200E03424 /* CurrencyLocale.swift in Sources */,
+				E8C590EA24920D5600E03424 /* String.swift in Sources */,
 				E8B8CB932442E09F0060E0F3 /* TapCard.swift in Sources */,
-				E8C590E424920BF200E03424 /* TapCurrencyFormatter.swift in Sources */,
 				E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */,
 				E8798865245EDDA400D643A2 /* TapCommonConstants.swift in Sources */,
-				E8C590E224920BF200E03424 /* String.swift in Sources */,
-				E8C590E324920BF200E03424 /* NumberFormatter.swift in Sources */,
 				E8C590952491FDB900E03424 /* MerchantModel.swift in Sources */,
 				E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */,
+				E8C590EE24920DB200E03424 /* TapAmountedCurrencyFormatter.swift in Sources */,
+				E8C590EC24920D7000E03424 /* TapCurrencyLocale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
