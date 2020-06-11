@@ -14,6 +14,10 @@
 		E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */; };
 		E8B8CB932442E09F0060E0F3 /* TapCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB922442E09F0060E0F3 /* TapCard.swift */; };
 		E8C590952491FDB900E03424 /* MerchantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590942491FDB900E03424 /* MerchantModel.swift */; };
+		E8C590A1249203B000E03424 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5909A249203B000E03424 /* String.swift */; };
+		E8C590A2249203B000E03424 /* TapCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5909B249203B000E03424 /* TapCurrencyFormatter.swift */; };
+		E8C590A3249203B000E03424 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5909C249203B000E03424 /* NumberFormatter.swift */; };
+		E8C590A4249203B000E03424 /* CurrencyLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C5909D249203B000E03424 /* CurrencyLocale.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCountryCode.swift; sourceTree = "<group>"; };
 		E8B8CB922442E09F0060E0F3 /* TapCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCard.swift; sourceTree = "<group>"; };
 		E8C590942491FDB900E03424 /* MerchantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MerchantModel.swift; sourceTree = "<group>"; };
+		E8C5909A249203B000E03424 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E8C5909B249203B000E03424 /* TapCurrencyFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapCurrencyFormatter.swift; sourceTree = "<group>"; };
+		E8C5909C249203B000E03424 /* NumberFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		E8C5909D249203B000E03424 /* CurrencyLocale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyLocale.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +112,30 @@
 		E8B8CB8D2442E0870060E0F3 /* enums */ = {
 			isa = PBXGroup;
 			children = (
+				E8C590972492039500E03424 /* TapCurrencyCode */,
 				E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */,
-				E8B8CB8E2442E0990060E0F3 /* TapCurrencyCode.swift */,
 			);
 			path = enums;
+			sourceTree = "<group>";
+		};
+		E8C590972492039500E03424 /* TapCurrencyCode */ = {
+			isa = PBXGroup;
+			children = (
+				E8C59098249203A100E03424 /* AmountedCurrencyFormatter */,
+				E8B8CB8E2442E0990060E0F3 /* TapCurrencyCode.swift */,
+			);
+			path = TapCurrencyCode;
+			sourceTree = "<group>";
+		};
+		E8C59098249203A100E03424 /* AmountedCurrencyFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				E8C5909B249203B000E03424 /* TapCurrencyFormatter.swift */,
+				E8C5909D249203B000E03424 /* CurrencyLocale.swift */,
+				E8C5909C249203B000E03424 /* NumberFormatter.swift */,
+				E8C5909A249203B000E03424 /* String.swift */,
+			);
+			path = AmountedCurrencyFormatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,10 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C590A4249203B000E03424 /* CurrencyLocale.swift in Sources */,
+				E8C590A2249203B000E03424 /* TapCurrencyFormatter.swift in Sources */,
 				E8B8CB932442E09F0060E0F3 /* TapCard.swift in Sources */,
 				E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */,
 				E8798865245EDDA400D643A2 /* TapCommonConstants.swift in Sources */,
+				E8C590A1249203B000E03424 /* String.swift in Sources */,
 				E8C590952491FDB900E03424 /* MerchantModel.swift in Sources */,
+				E8C590A3249203B000E03424 /* NumberFormatter.swift in Sources */,
 				E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
