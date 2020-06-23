@@ -2302,3 +2302,22 @@ import Foundation
     }
     
 }
+
+
+
+public extension TapCurrencyCode {
+    /**
+     Converts the self currency from the provided currency
+     - Parameter from: The currency that originaly has the amount
+     - Parameter amount: The value you want to convert
+     - Returns: The converted value to the self currency
+     */
+    func convert(from:TapCurrencyCode?,for amount:Double) -> Double {
+        let rates:[String:[String:Double]] = ["USD":["USD":1,"KWD":0.30785,"EGP":16.179599,"SAR":3.750992,"QAR":3.640994,"BHD":0.377234,"JOD":0.709799,"AED":3.673099,"OMR":0.384529]]
+        
+        guard let fromCurrency = from, let fromCurrencyRates:[String:Double] = rates[fromCurrency.appleRawValue], let conversionRate:Double = fromCurrencyRates[self.appleRawValue] else { return amount }
+        
+        return amount * conversionRate
+    }
+    
+}
