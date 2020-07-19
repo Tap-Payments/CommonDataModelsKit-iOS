@@ -63,6 +63,13 @@
         },
         "GoPay": {
             "HintLabel": "You can access your saved cards from anywhere with goPay."
+        },
+        "ActionButton":{
+            "pay": "Pay",
+            "confirm": "Confirm",
+            "resend": "Resend OTP"
+            "next": "Next",
+            "signin": "Signin"
         }
     },
     "ar": {
@@ -130,5 +137,12 @@
         "GoPay": {
             "HintLabel": "يمكنك الدفع بالكروت المحفوظفة في جو باي من أي مكان"
         }
+    },
+    "ActionButton":{
+        "pay": "إدفع",
+        "confirm": "تأكيد",
+        "resend": "إعادة إرسال",
+        "next": "التالي",
+        "signin": "دخول"
     }
 }
