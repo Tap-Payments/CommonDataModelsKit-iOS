@@ -31,9 +31,21 @@
 		E8844D662677538A0073D777 /* OptionallyIdentifiableWithString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D642677538A0073D777 /* OptionallyIdentifiableWithString.swift */; };
 		E8844D6D267753B20073D777 /* TapPaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D68267753B20073D777 /* TapPaymentType.swift */; };
 		E8844D6E267753B20073D777 /* cardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D69267753B20073D777 /* cardType.swift */; };
-		E8844D6F267753B20073D777 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D6A267753B20073D777 /* CardType.swift */; };
 		E8844D70267753B20073D777 /* AuthorizeActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D6B267753B20073D777 /* AuthorizeActionType.swift */; };
 		E8844D71267753B20073D777 /* TransactionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D6C267753B20073D777 /* TransactionMode.swift */; };
+		E8844FA62679C2F10073D777 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FA52679C2F10073D777 /* CardType.swift */; };
+		E8844FA92679C34C0073D777 /* QuantityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FA82679C34C0073D777 /* QuantityModel.swift */; };
+		E8844FB72679C3870073D777 /* _ObjCMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAC2679C3870073D777 /* _ObjCMeasurement.swift */; };
+		E8844FB82679C3870073D777 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAD2679C3870073D777 /* Power.swift */; };
+		E8844FB92679C3870073D777 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAE2679C3870073D777 /* Length.swift */; };
+		E8844FBA2679C3870073D777 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAF2679C3870073D777 /* Measurement.swift */; };
+		E8844FBB2679C3870073D777 /* ElectricCharge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB02679C3870073D777 /* ElectricCharge.swift */; };
+		E8844FBC2679C3870073D777 /* Energy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB12679C3870073D777 /* Energy.swift */; };
+		E8844FBD2679C3870073D777 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB22679C3870073D777 /* Area.swift */; };
+		E8844FBE2679C3870073D777 /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB32679C3870073D777 /* Mass.swift */; };
+		E8844FBF2679C3870073D777 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB42679C3870073D777 /* Volume.swift */; };
+		E8844FC02679C3870073D777 /* ElectricCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB52679C3870073D777 /* ElectricCurrent.swift */; };
+		E8844FC12679C3870073D777 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB62679C3870073D777 /* Duration.swift */; };
 		E8B8CB852442E0730060E0F3 /* CommonDataModelsKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B8CB832442E0730060E0F3 /* CommonDataModelsKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8E2442E0990060E0F3 /* TapCurrencyCode.swift */; };
 		E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */; };
@@ -72,9 +84,21 @@
 		E8844D642677538A0073D777 /* OptionallyIdentifiableWithString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionallyIdentifiableWithString.swift; sourceTree = "<group>"; };
 		E8844D68267753B20073D777 /* TapPaymentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapPaymentType.swift; sourceTree = "<group>"; };
 		E8844D69267753B20073D777 /* cardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardType.swift; sourceTree = "<group>"; };
-		E8844D6A267753B20073D777 /* CardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardType.swift; path = "../../../../../CheckoutSDK-iOS/CheckoutSDK-iOS/CheckoutSDK-iOS/Core/Logic/Enums/public/CardType.swift"; sourceTree = "<group>"; };
 		E8844D6B267753B20073D777 /* AuthorizeActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeActionType.swift; sourceTree = "<group>"; };
 		E8844D6C267753B20073D777 /* TransactionMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionMode.swift; sourceTree = "<group>"; };
+		E8844FA52679C2F10073D777 /* CardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardType.swift; path = ../../../../../../CardType.swift; sourceTree = "<group>"; };
+		E8844FA82679C34C0073D777 /* QuantityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityModel.swift; sourceTree = "<group>"; };
+		E8844FAC2679C3870073D777 /* _ObjCMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ObjCMeasurement.swift; sourceTree = "<group>"; };
+		E8844FAD2679C3870073D777 /* Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
+		E8844FAE2679C3870073D777 /* Length.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
+		E8844FAF2679C3870073D777 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
+		E8844FB02679C3870073D777 /* ElectricCharge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricCharge.swift; sourceTree = "<group>"; };
+		E8844FB12679C3870073D777 /* Energy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Energy.swift; sourceTree = "<group>"; };
+		E8844FB22679C3870073D777 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		E8844FB32679C3870073D777 /* Mass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mass.swift; sourceTree = "<group>"; };
+		E8844FB42679C3870073D777 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		E8844FB52679C3870073D777 /* ElectricCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricCurrent.swift; sourceTree = "<group>"; };
+		E8844FB62679C3870073D777 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
 		E8B8CB802442E0730060E0F3 /* CommonDataModelsKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonDataModelsKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B8CB832442E0730060E0F3 /* CommonDataModelsKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModelsKit_iOS.h; sourceTree = "<group>"; };
 		E8B8CB842442E0730060E0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,6 +173,24 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
+		E8844FAB2679C3870073D777 /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				E8844FAC2679C3870073D777 /* _ObjCMeasurement.swift */,
+				E8844FAD2679C3870073D777 /* Power.swift */,
+				E8844FAE2679C3870073D777 /* Length.swift */,
+				E8844FAF2679C3870073D777 /* Measurement.swift */,
+				E8844FB02679C3870073D777 /* ElectricCharge.swift */,
+				E8844FB12679C3870073D777 /* Energy.swift */,
+				E8844FB22679C3870073D777 /* Area.swift */,
+				E8844FB32679C3870073D777 /* Mass.swift */,
+				E8844FB42679C3870073D777 /* Volume.swift */,
+				E8844FB52679C3870073D777 /* ElectricCurrent.swift */,
+				E8844FB62679C3870073D777 /* Duration.swift */,
+			);
+			path = Measurements;
+			sourceTree = "<group>";
+		};
 		E8B8CB762442E0730060E0F3 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +246,7 @@
 				E8C590942491FDB900E03424 /* MerchantModel.swift */,
 				E8B8CB922442E09F0060E0F3 /* TapCard.swift */,
 				E8844BD32676199D0073D777 /* Tax.swift */,
+				E8844FA82679C34C0073D777 /* QuantityModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -211,9 +254,10 @@
 		E8B8CB8D2442E0870060E0F3 /* enums */ = {
 			isa = PBXGroup;
 			children = (
+				E8844FAB2679C3870073D777 /* Measurements */,
 				E8844D6B267753B20073D777 /* AuthorizeActionType.swift */,
+				E8844FA52679C2F10073D777 /* CardType.swift */,
 				E8844D69267753B20073D777 /* cardType.swift */,
-				E8844D6A267753B20073D777 /* CardType.swift */,
 				E8844D68267753B20073D777 /* TapPaymentType.swift */,
 				E8844D6C267753B20073D777 /* TransactionMode.swift */,
 				E8C590972492039500E03424 /* TapCurrencyCode */,
@@ -344,24 +388,32 @@
 				E8844D5F267753770073D777 /* TapPhone.swift in Sources */,
 				E8C590EA24920D5600E03424 /* String.swift in Sources */,
 				E8844D6D267753B20073D777 /* TapPaymentType.swift in Sources */,
-				E8844D6F267753B20073D777 /* CardType.swift in Sources */,
 				E8B8CB932442E09F0060E0F3 /* TapCard.swift in Sources */,
 				E8BE3FA224B58E7500F15C41 /* TapCountry.swift in Sources */,
 				E8844D32267750E20073D777 /* TapSDKErrorType.swift in Sources */,
 				E8844D412677516F0073D777 /* TapSDKKnownError.swift in Sources */,
+				E8844FBB2679C3870073D777 /* ElectricCharge.swift in Sources */,
+				E8844FB82679C3870073D777 /* Power.swift in Sources */,
+				E8844FB72679C3870073D777 /* _ObjCMeasurement.swift in Sources */,
 				E8844D422677516F0073D777 /* ErrorDetail.swift in Sources */,
 				E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */,
 				E8844D652677538A0073D777 /* IdentifiableWithString.swift in Sources */,
 				E8798865245EDDA400D643A2 /* TapCommonConstants.swift in Sources */,
 				E8844D31267750E20073D777 /* ErrorCode.swift in Sources */,
+				E8844FC12679C3870073D777 /* Duration.swift in Sources */,
 				E8844D4B2677516F0073D777 /* TapSDKUnknownError.swift in Sources */,
 				E8844D6E267753B20073D777 /* cardType.swift in Sources */,
+				E8844FBC2679C3870073D777 /* Energy.swift in Sources */,
 				E8844D70267753B20073D777 /* AuthorizeActionType.swift in Sources */,
 				E8C590952491FDB900E03424 /* MerchantModel.swift in Sources */,
 				E8844BCA267617260073D777 /* ItemModel.swift in Sources */,
 				E8844BD1267617F40073D777 /* AmountMoficiationType.swift in Sources */,
+				E8844FBF2679C3870073D777 /* Volume.swift in Sources */,
+				E8844FBD2679C3870073D777 /* Area.swift in Sources */,
+				E8844FB92679C3870073D777 /* Length.swift in Sources */,
 				E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */,
 				E8C590EE24920DB200E03424 /* TapAmountedCurrencyFormatter.swift in Sources */,
+				E8844FA92679C34C0073D777 /* QuantityModel.swift in Sources */,
 				E8844D61267753770073D777 /* TapMetaData.swift in Sources */,
 				E8844D492677516F0073D777 /* TapSDKError.swift in Sources */,
 				E8844D60267753770073D777 /* TapEmailAddress.swift in Sources */,
@@ -374,6 +426,10 @@
 				E8844D71267753B20073D777 /* TransactionMode.swift in Sources */,
 				E8844BCB267617260073D777 /* AmountModificatorModel.swift in Sources */,
 				E8844D452677516F0073D777 /* APIError.swift in Sources */,
+				E8844FBA2679C3870073D777 /* Measurement.swift in Sources */,
+				E8844FA62679C2F10073D777 /* CardType.swift in Sources */,
+				E8844FC02679C3870073D777 /* ElectricCurrent.swift in Sources */,
+				E8844FBE2679C3870073D777 /* Mass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
