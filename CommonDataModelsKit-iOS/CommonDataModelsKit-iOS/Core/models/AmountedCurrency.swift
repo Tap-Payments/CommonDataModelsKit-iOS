@@ -6,45 +6,38 @@
 //
 
 /// Structure holding currency and the amount.
-internal struct AmountedCurrency: Decodable {
+@objc public class AmountedCurrency: NSObject,Decodable {
     
     // MARK: - Internal -
     // MARK: Properties
     
     /// Currency.
-    internal let currency: TapCurrencyCode
+    public let currency: TapCurrencyCode
     
     /// Amount.
-    internal let amount: Double
+    public let amount: Double
     
     /// Currency symbol.
-    internal let currencySymbol: String
+    public let currencySymbol: String
     
     /// Currency flag icon url.
-    internal let flag: String
+    public let flag: String
     
     /// Conversion factor to transaction currency from baclend
-    internal var rate: Double?
-        
+    public var rate: Double?
+    
     // MARK: Methods
     
-    internal init(_ currency: TapCurrencyCode, _ amount: Double, _ flag: String) {
+    @objc public convenience init(_ currency: TapCurrencyCode, _ amount: Double, _ flag: String) {
         self.init(currency, amount, currency.symbolRawValue, flag)
     }
     
-    internal init(_ currency: TapCurrencyCode, _ amount: Double, _ currencySymbol: String, _ flag: String) {
+    @objc public init(_ currency: TapCurrencyCode, _ amount: Double, _ currencySymbol: String, _ flag: String) {
         
         self.currency       = currency
         self.amount         = amount
         self.currencySymbol = currencySymbol
         self.flag = flag
-    }
-    
-    
-    
-    func calculateConvrsionRate()
-    {
-        //
     }
     
     // MARK: - Private -
@@ -57,12 +50,8 @@ internal struct AmountedCurrency: Decodable {
         case rate           = "rate"
         case flag           = "flag"
     }
-}
-
-// MARK: - Equatable
-extension AmountedCurrency: Equatable {
     
-    internal static func == (lhs: AmountedCurrency, rhs: AmountedCurrency) -> Bool {
+    public static func == (lhs: AmountedCurrency, rhs: AmountedCurrency) -> Bool {
         
         return lhs.currency == rhs.currency && lhs.amount == rhs.amount
     }
