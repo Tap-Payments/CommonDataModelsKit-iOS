@@ -46,6 +46,7 @@
 		E8844FBF2679C3870073D777 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB42679C3870073D777 /* Volume.swift */; };
 		E8844FC02679C3870073D777 /* ElectricCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB52679C3870073D777 /* ElectricCurrent.swift */; };
 		E8844FC12679C3870073D777 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB62679C3870073D777 /* Duration.swift */; };
+		E8845109267B44740073D777 /* AmountedCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8845108267B44740073D777 /* AmountedCurrency.swift */; };
 		E8B8CB852442E0730060E0F3 /* CommonDataModelsKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B8CB832442E0730060E0F3 /* CommonDataModelsKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8E2442E0990060E0F3 /* TapCurrencyCode.swift */; };
 		E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */; };
@@ -99,6 +100,7 @@
 		E8844FB42679C3870073D777 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
 		E8844FB52679C3870073D777 /* ElectricCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricCurrent.swift; sourceTree = "<group>"; };
 		E8844FB62679C3870073D777 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		E8845108267B44740073D777 /* AmountedCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountedCurrency.swift; sourceTree = "<group>"; };
 		E8B8CB802442E0730060E0F3 /* CommonDataModelsKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonDataModelsKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B8CB832442E0730060E0F3 /* CommonDataModelsKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModelsKit_iOS.h; sourceTree = "<group>"; };
 		E8B8CB842442E0730060E0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 		E8B8CB8C2442E0820060E0F3 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				E8845108267B44740073D777 /* AmountedCurrency.swift */,
 				E8844D632677538A0073D777 /* IdentifiableWithString.swift */,
 				E8844D642677538A0073D777 /* OptionallyIdentifiableWithString.swift */,
 				E8844D5D267753770073D777 /* TapEmailAddress.swift */,
@@ -424,6 +427,7 @@
 				E8844BD42676199D0073D777 /* Tax.swift in Sources */,
 				E8C590EC24920D7000E03424 /* TapCurrencyLocale.swift in Sources */,
 				E8844D71267753B20073D777 /* TransactionMode.swift in Sources */,
+				E8845109267B44740073D777 /* AmountedCurrency.swift in Sources */,
 				E8844BCB267617260073D777 /* AmountModificatorModel.swift in Sources */,
 				E8844D452677516F0073D777 /* APIError.swift in Sources */,
 				E8844FBA2679C3870073D777 /* Measurement.swift in Sources */,

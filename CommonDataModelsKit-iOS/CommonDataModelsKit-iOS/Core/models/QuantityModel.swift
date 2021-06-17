@@ -34,7 +34,7 @@
     }
     
     /// Value.
-    public var value: Decimal
+    public var value: Double
     
     /// Measurement group.
     public var measurementGroup: String {
@@ -55,7 +55,7 @@
     /// - Parameters:
     ///   - value: Value.
     ///   - unitOfMeasurement: Unit of measurement.
-    public init(value: Decimal, unitOfMeasurement: Measurement) {
+    public init(value: Double, unitOfMeasurement: Measurement) {
         
         self.value = value
         self.unitOfMeasurement = unitOfMeasurement
@@ -72,7 +72,7 @@
     ///   - value: Value.
     ///   - unitOfMeasurement: Unit of measurement.
     @available(swift, obsoleted: 1.0)
-    public convenience init(value: Decimal, unitOfMeasurement: _ObjCMeasurement) {
+    public convenience init(value: Double, unitOfMeasurement: _ObjCMeasurement) {
         
         self.init(value: value, unitOfMeasurement: unitOfMeasurement.swiftValue)
     }
@@ -140,7 +140,7 @@ extension Quantity: Decodable {
         
         let group   = try container.decode(String.self  , forKey: .apiMeasurementGroup)
         let unit    = try container.decode(String?.self , forKey: .apiMeasurementUnit)
-        let value   = try container.decode(Decimal.self , forKey: .value)
+        let value   = try container.decode(Double.self , forKey: .value)
         
         guard let measurement = Measurement(category: group, unit: unit) else {
             
