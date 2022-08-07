@@ -5,16 +5,16 @@
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
-internal struct Order: IdentifiableWithString, Encodable {
+public struct Order: IdentifiableWithString, Encodable {
     
     // MARK: - Internal -
     // MARK: Properties
     
-    internal let identifier: String
+    public let identifier: String
     
     // MARK: Methods
     
-    internal init(identifier: String) {
+    public init(identifier: String) {
         
         self.identifier = identifier
     }

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
+
 /// Represents the extra fees model. This will be used when a user selects a payment option like credit card, he has to know he will be paying some more money for it :)
 /// - tag: ExtraFee
 internal final class ExtraFee: AmountModificatorModel {

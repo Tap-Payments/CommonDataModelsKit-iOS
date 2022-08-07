@@ -9,7 +9,7 @@
 /// To charge a credit or a debit card, you create a charge object.
 /// You can retrieve and refund individual charges as well as list all charges.
 /// Charges are identified by a unique random ID.
-import CommonDataModelsKit_iOS
+
 @objcMembers public final class Charge: NSObject, ChargeProtocol, IdentifiableWithString {
     
     

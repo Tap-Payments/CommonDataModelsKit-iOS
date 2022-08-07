@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
+
 /// Create charge request model.
-internal class TapChargeRequestModel: Encodable {
+public class TapChargeRequestModel: Encodable {
     
     // MARK: - Internal -
     // MARK: Properties

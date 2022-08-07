@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
+
 /// TapLoggedRequestModel model.
-internal struct TapLoggingModel: Codable {
+public struct TapLoggingModel: Codable {
     
     // MARK: - Internal -
     // MARK: Properties

@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
+
 
 /// Create authorize request model.
-internal class TapAuthorizeRequestModel: TapChargeRequestModel {
+public class TapAuthorizeRequestModel: TapChargeRequestModel {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -41,7 +41,7 @@ internal class TapAuthorizeRequestModel: TapChargeRequestModel {
     ///   - requires3DSecure: Defines if 3D secure is required.
     ///   - receipt: Receipt settings.
     ///   - authorizeAction: Authorize action.
-    internal init(
+    public init(
         amount:                 Double,
         selectedAmount:         Double,
         currency:               TapCurrencyCode,
@@ -91,7 +91,7 @@ internal class TapAuthorizeRequestModel: TapChargeRequestModel {
     ///
     /// - Parameter encoder: Encoder.
     /// - Throws: EncodingError
-    internal override func encode(to encoder: Encoder) throws {
+    public override func encode(to encoder: Encoder) throws {
         
         try super.encode(to: encoder)
         

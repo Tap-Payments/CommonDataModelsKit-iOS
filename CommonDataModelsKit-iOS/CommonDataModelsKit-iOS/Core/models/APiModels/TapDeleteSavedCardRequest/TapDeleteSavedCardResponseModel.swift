@@ -9,13 +9,13 @@
 import Foundation
 
 /// The model to represent the delete of saved card api
-internal struct TapDeleteSavedCardResponseModel: IdentifiableWithString, Decodable {
+public struct TapDeleteSavedCardResponseModel: IdentifiableWithString, Decodable {
     
     // MARK: - Internal -
     // MARK: Properties
     
-    internal let isDeleted: Bool
-    internal let identifier: String
+    public let isDeleted: Bool
+    public let identifier: String
     
     // MARK: - Private -
     
