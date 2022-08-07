@@ -1,6 +1,10 @@
 PODS:
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
   - TapAdditionsKitV2 (0.0.8):
     - TapSwiftFixesV2
+  - TapKeychain (1.0.5)
   - TapSwiftFixesV2 (1.0.0):
     - TapSwiftFixesV2/CoreGraphics (= 1.0.0)
     - TapSwiftFixesV2/Exceptions (= 1.0.0)
@@ -10,17 +14,23 @@ PODS:
   - TapSwiftFixesV2/Threading (1.0.0)
 
 DEPENDENCIES:
+  - SwiftyRSA
   - TapAdditionsKitV2
+  - TapKeychain
 
 SPEC REPOS:
   trunk:
+    - SwiftyRSA
     - TapAdditionsKitV2
+    - TapKeychain
     - TapSwiftFixesV2
 
 SPEC CHECKSUMS:
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   TapAdditionsKitV2: ba369802e9575c3475ce6d5af228cf60c68edfc9
+  TapKeychain: 143aa70bb2d1b094e0298e944660264034c79849
   TapSwiftFixesV2: a8623a7273c6790b9754ec7e272e96fce7d3a800
 
-PODFILE CHECKSUM: e49934fb0530fc0e459e88d64e4993cf25bc6d58
+PODFILE CHECKSUM: 9cb23e94867e1005b5a1f7d3e0e3f0184c7ee551
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
