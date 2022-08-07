@@ -4,15 +4,14 @@
 //
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
-import CommonDataModelsKit_iOS
 import TapCardVlidatorKit_iOS
 
-internal struct CardScheme {
+public struct CardScheme {
     
     // MARK: - Internal -
     // MARK: Properties
     
-    internal let cardBrand: CardBrand
+    public let cardBrand: CardBrand
     
     // MARK: - Private -
     // MARK: Methods
@@ -26,7 +25,7 @@ internal struct CardScheme {
 // MARK: - Decodable
 extension CardScheme: Decodable {
     
-    internal init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let container = try decoder.singleValueContainer()
         let brand = try container.decode(CardBrand.self)
@@ -38,8 +37,8 @@ extension CardScheme: Decodable {
 // MARK: - Equatable
 extension CardScheme: Equatable {
     
-    internal static func == (lhs: CardScheme, rhs: CardScheme) -> Bool {
-    
+    public static func == (lhs: CardScheme, rhs: CardScheme) -> Bool {
+        
         return lhs.cardBrand == rhs.cardBrand
     }
 }

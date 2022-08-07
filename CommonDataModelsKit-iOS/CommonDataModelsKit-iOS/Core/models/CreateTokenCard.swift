@@ -28,7 +28,7 @@ public struct CreateTokenCard {
     }
     
     /// Create TokenedCardRequest from the TapCardModel
-    internal init(card:TapCard, address:Address?) throws {
+    public init(card:TapCard, address:Address?) throws {
         
         guard let number = card.tapCardNumber, let expirationMonth = card.tapCardExpiryMonth, let expirationYear = card.tapCardExpiryYear, let cvv = card.tapCardCVV else {
             throw "Cannot create a sensitive card without card info"
@@ -125,7 +125,7 @@ internal extension SecureEncodable {
             throw "Secure encoding wrong data parsed to string"
         }
         
-        guard let encryptionKey = sharedCommongDataModels.encryptionKey else {
+        guard let encryptionKey = SharedCommongDataModels.sharedCommongDataModels.encryptionKey else {
             
             throw "Secure encoding wrong data missing encryption key"
         }

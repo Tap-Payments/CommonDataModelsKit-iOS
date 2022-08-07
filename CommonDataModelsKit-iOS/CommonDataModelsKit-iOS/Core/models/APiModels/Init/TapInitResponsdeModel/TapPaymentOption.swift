@@ -10,22 +10,22 @@ import Foundation
 import struct PassKit.PKPaymentNetwork
 import TapCardVlidatorKit_iOS
 /// Payment Option model.
-internal struct PaymentOption: IdentifiableWithString {
+public struct PaymentOption: IdentifiableWithString {
     
     // MARK: - Internal -
     // MARK: Properties
     
     /// Unique identifier for the object.
-    internal let identifier: String
+    public let identifier: String
     
     /// Payment option card brand.
-    internal let brand: CardBrand
+    public let brand: CardBrand
     
     /// Name of the payment option.
     internal var title: String
     
     /// Image URL of the payment option.
-    internal let backendImageURL: URL
+    public let backendImageURL: URL
     
     /// If the payment option is async or not
     internal let isAsync: Bool
@@ -37,14 +37,14 @@ internal struct PaymentOption: IdentifiableWithString {
     internal private(set) var sourceIdentifier: String?
     
     /// Supported card brands.
-    internal let supportedCardBrands: [CardBrand]
+    public let supportedCardBrands: [CardBrand]
     
     
     /// List of supported currencies.
-    internal let supportedCurrencies: [TapCurrencyCode]
+    public let supportedCurrencies: [TapCurrencyCode]
     
     /// Ordering parameter.
-    internal let orderBy: Int
+    public let orderBy: Int
     
     /// Decide if the 3ds should be disabled, enabled or set by user for this payment option
     internal let threeDLevel: ThreeDSecurityState
@@ -83,7 +83,7 @@ internal struct PaymentOption: IdentifiableWithString {
 // MARK: - Decodable
 extension PaymentOption: Decodable {
     
-    internal init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let container           = try decoder.container(keyedBy: CodingKeys.self)
         

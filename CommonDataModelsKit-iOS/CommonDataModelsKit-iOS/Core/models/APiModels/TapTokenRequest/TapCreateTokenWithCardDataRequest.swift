@@ -7,10 +7,9 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
 
 /// Request model for token creation with card data.
-internal struct TapCreateTokenWithCardDataRequest: TapCreateTokenRequest {
+public struct TapCreateTokenWithCardDataRequest: TapCreateTokenRequest {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -18,7 +17,7 @@ internal struct TapCreateTokenWithCardDataRequest: TapCreateTokenRequest {
     /// Card to create token for.
     internal let card: CreateTokenCard
     /// The api endpoint path for tokens
-    internal let route: TapNetworkPath = .tokens
+    public let route: TapNetworkPath = .tokens
     
     // MARK: - Internal -
     // MARK: Methods
@@ -26,7 +25,7 @@ internal struct TapCreateTokenWithCardDataRequest: TapCreateTokenRequest {
     /// Initializes the request with card.
     ///
     /// - Parameter card: Card.
-    internal init(card: CreateTokenCard) {
+    public init(card: CreateTokenCard) {
         
         self.card = card
     }

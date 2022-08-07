@@ -7,10 +7,8 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
-
 /// goSell SDK Settings model.
-internal struct SDKSettings {
+public struct SDKSettings {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -35,7 +33,7 @@ internal struct SDKSettings {
     internal let internalSettings: InternalSDKSettings?
     
     /// Session token.
-    internal private(set) var sessionToken: String?
+    public private(set) var sessionToken: String?
     
     /// Determine if the passed data is correct ones by the backend
     internal let verifiedApplication:Bool?
@@ -60,7 +58,7 @@ internal struct SDKSettings {
 // MARK: - Decodable
 extension SDKSettings: Decodable {
     
-    internal init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -81,6 +79,8 @@ extension SDKSettings: Decodable {
             throw "TAP SDK ERROR : Empty Encryption Key"
         }
         
+        SharedCommongDataModels.sharedCommongDataModels.encryptionKey = encryptionKey
+        
         self.init(isLiveMode:           isLiveMode,
                   permissions:          permissions,
                   encryptionKey:        encryptionKey,
@@ -94,15 +94,15 @@ extension SDKSettings: Decodable {
 
 
 /// goSell SDK settings data model.
-internal struct TapInitResponseModel:Decodable {
+public struct TapInitResponseModel:Decodable {
     
     // MARK: - Internal -
     // MARK: Properties
     
     /// Data.
-    internal var data: SDKSettings
+    public var data: SDKSettings
     /// Payment options.
-    internal var cardPaymentOptions: TapPaymentOptionsReponseModel
+    public var cardPaymentOptions: TapPaymentOptionsReponseModel
     
     // MARK: - Private -
     

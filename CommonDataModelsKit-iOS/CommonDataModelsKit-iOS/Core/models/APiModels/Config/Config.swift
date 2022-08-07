@@ -8,7 +8,7 @@
 
 import Foundation
 /// Config part of the Config api request model
-internal struct Config: Encodable {
+public struct Config: Encodable {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -17,7 +17,7 @@ internal struct Config: Encodable {
     
     // MARK: Methods
     
-    internal init(application: String) {
+    public init(application: String) {
         
         self.application = application
     }

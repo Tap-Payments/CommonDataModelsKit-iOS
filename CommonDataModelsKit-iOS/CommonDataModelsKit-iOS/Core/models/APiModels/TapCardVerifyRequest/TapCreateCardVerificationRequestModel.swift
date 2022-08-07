@@ -7,34 +7,48 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
 
 /// Create charge request model.
-internal struct TapCreateCardVerificationRequestModel: Encodable {
+public struct TapCreateCardVerificationRequestModel: Encodable {
+    
+    /// Create charge request model.
+    public init(is3DSecureRequired: Bool?, shouldSaveCard: Bool, metadata: TapMetadata?, customer: TapCustomer, currency: TapCurrencyCode, source: SourceRequest, redirect: TrackingURL) {
+        self.is3DSecureRequired = is3DSecureRequired
+        self.shouldSaveCard = shouldSaveCard
+        self.metadata = metadata
+        self.customer = customer
+        self.currency = currency
+        self.source = source
+        self.redirect = redirect
+    }
+    
     
     // MARK: - Internal -
     // MARK: Properties
     
     /// Whether we need to activate 3ds or not
-    internal let is3DSecureRequired: Bool?
+    public let is3DSecureRequired: Bool?
     
     /// Whether we need  to save the card
-    internal let shouldSaveCard: Bool
+    public let shouldSaveCard: Bool
     
     /// Any additional data the merchant wants to attach to
-    internal let metadata: TapMetadata?
+    public let metadata: TapMetadata?
     
     /// The customer who is saving the card
-    internal let customer: TapCustomer
+    public let customer: TapCustomer
     
     /// The currency for the saved card
-    internal let currency: TapCurrencyCode
+    public let currency: TapCurrencyCode
     
     /// The request source
-    internal let source: SourceRequest
+    public let source: SourceRequest
     
     /// The url the merchant wants to repost the result to
-    internal let redirect: TrackingURL
+    public let redirect: TrackingURL
+    
+    
+    
     
     // MARK: - Private -
     

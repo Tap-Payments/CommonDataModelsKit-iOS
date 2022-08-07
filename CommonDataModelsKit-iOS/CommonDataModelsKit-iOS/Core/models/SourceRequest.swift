@@ -20,7 +20,7 @@
     /// Initializes source object with static identifier.
     ///
     /// - Parameter identifier: Static source identifier.
-    internal convenience init(identifier: String) {
+    public convenience init(identifier: String) {
         
         self.init(identifier)
     }
@@ -28,12 +28,12 @@
     /// Initializes source object with token.
     ///
     /// - Parameter token: Token to initialize source with.
-    internal convenience init(token: Token) {
+    public convenience init(token: Token) {
         
         self.init(token.identifier)
     }
     
-    internal init(_ identifier: String) {
+    public init(_ identifier: String) {
         
         self.identifier = identifier
         super.init()
