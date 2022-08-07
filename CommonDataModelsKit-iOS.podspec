@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CommonDataModelsKit-iOS"
-  spec.version      = "1.0.55"
+  spec.version      = "1.0.56"
   spec.summary      = "Common data models and enums between different kits"
 
   # This description is used to generate tags and improve search results.
@@ -133,5 +133,9 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   spec.dependency "TapAdditionsKitV2"
+  spec.dependency "SwiftyRSA"
+  spec.dependency "TapKeychain"
+  spec.dependency "TapCardVlidatorKit-iOS"
+
 
 end

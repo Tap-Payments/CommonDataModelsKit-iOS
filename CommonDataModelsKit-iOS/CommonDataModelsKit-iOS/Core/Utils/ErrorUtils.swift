@@ -28,11 +28,11 @@
 }
 
 
-internal struct ErrorConstants {
+public struct ErrorConstants {
     
     internal static let internalErrorDomain = "company.tap.gosellsdk"
     
-    internal struct UserInfoKeys {
+    public struct UserInfoKeys {
         
         internal static let addressType             = "address_type"
         internal static let tokenType               = "token_type"

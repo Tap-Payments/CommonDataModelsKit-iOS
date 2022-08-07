@@ -9,4 +9,5 @@ target 'CommonDataModelsKit-iOS' do
   pod 'TapAdditionsKitV2'
   pod 'SwiftyRSA'
   pod 'TapKeychain'
+  pod 'TapCardVlidatorKit-iOS'
 end
