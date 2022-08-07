@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
 
 /// Card Verification class.
 @objcMembers public class TapCreateCardVerificationResponseModel: NSObject, Decodable, IdentifiableWithString {
@@ -81,14 +80,14 @@ import CommonDataModelsKit_iOS
 // MARK: - Retrievable
 extension TapCreateCardVerificationResponseModel: Retrievable {
     
-    internal static var retrieveRoute: TapNetworkPath {
+    public static var retrieveRoute: TapNetworkPath {
         
         return .cardVerification
     }
 }
 
 
-internal protocol Retrievable: IdentifiableWithString, Decodable {
+public protocol Retrievable: IdentifiableWithString, Decodable {
     
     static var retrieveRoute: TapNetworkPath { get }
 }

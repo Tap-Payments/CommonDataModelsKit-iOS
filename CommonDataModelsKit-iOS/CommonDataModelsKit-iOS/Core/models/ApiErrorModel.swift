@@ -14,7 +14,7 @@ public struct ApiErrorModel {
     // MARK: - Internal -
     // MARK: Properties
     /// Determines if there are errors from the backend if any
-    internal let errors:[ErrorDetail]
+    public let errors:[ErrorDetail]
     
     // MARK: - Private -
     

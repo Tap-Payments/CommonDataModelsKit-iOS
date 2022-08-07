@@ -18,7 +18,7 @@
     public let object: String
     
     /// Tokenized card.
-	public let card: TokenizedCard
+    public let card: TokenizedCard
     
     /// Token type.
     public let type: TokenType
@@ -38,7 +38,7 @@
     // MARK: - Private -
     
     private enum CodingKeys: String, CodingKey {
-		
+        
         case identifier         = "id"
         case object             = "object"
         case card               = "card"
@@ -67,7 +67,7 @@
 // MARK: - Decodable
 extension Token: Decodable {
     
-	public convenience init(from decoder: Decoder) throws {
+    public convenience init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -94,7 +94,7 @@ extension Token: Decodable {
 
 
 /// All models that have identifier are conforming to this protocol.
-internal protocol IdentifiableWithString {
+public protocol IdentifiableWithString {
     
     // MARK: Properties
     

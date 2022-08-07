@@ -12,16 +12,16 @@ public class KeychainManager {
     // MARK: - Internal -
     // MARK: Properties
     
-    internal static var deviceID: String? {
+    public static var deviceID: String? {
         
         get {
             
-            let key = self.deviceIDKey(for: sharedCommongDataModels.sdkMode)
+            let key = self.deviceIDKey(for: SharedCommongDataModels.sharedCommongDataModels.sdkMode)
             return Keychain.read(for: key)
         }
         set {
             
-            let key = self.deviceIDKey(for: sharedCommongDataModels.sdkMode)
+            let key = self.deviceIDKey(for: SharedCommongDataModels.sharedCommongDataModels.sdkMode)
             Keychain.write(newValue, for: key)
         }
     }

@@ -8,9 +8,9 @@
 
 import Foundation
 import TapCardVlidatorKit_iOS
-import CommonDataModelsKit_iOS
+
 /// BIN Response model.
-internal struct TapBinResponseModel {
+public struct TapBinResponseModel {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -25,19 +25,19 @@ internal struct TapBinResponseModel {
     internal let bankLogoURL: URL?
     
     /// Card BIN number.
-    internal let binNumber: String
+    public let binNumber: String
     
     /// Card brand.
     internal let cardBrand: CardBrand
     
     /// Card scheme.
-    internal let scheme: CardScheme?
+    public let scheme: CardScheme?
     
     /// Card issuing country.
     internal let country: Country?
     
     /// Card Type.
-    internal let cardType: CardType
+    public let cardType: CardType
     
     // MARK: - Private -
     
@@ -57,7 +57,7 @@ internal struct TapBinResponseModel {
 // MARK: - Equatable
 extension TapBinResponseModel: Equatable {
     
-    internal static func == (lhs: TapBinResponseModel, rhs: TapBinResponseModel) -> Bool {
+    public static func == (lhs: TapBinResponseModel, rhs: TapBinResponseModel) -> Bool {
         
         return lhs.binNumber == rhs.binNumber
     }
@@ -66,7 +66,7 @@ extension TapBinResponseModel: Equatable {
 // MARK: - Decodable
 extension TapBinResponseModel: Decodable {
     
-    internal init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         

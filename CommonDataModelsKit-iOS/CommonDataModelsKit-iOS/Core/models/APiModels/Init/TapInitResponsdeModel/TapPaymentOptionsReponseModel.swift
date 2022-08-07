@@ -7,16 +7,15 @@
 //
 
 import Foundation
-import CommonDataModelsKit_iOS
 
 /// Payment Options Response model.
-internal struct TapPaymentOptionsReponseModel: IdentifiableWithString {
+public struct TapPaymentOptionsReponseModel: IdentifiableWithString {
     
     // MARK: - Internal -
     // MARK: Properties
     
     /// Object identifier.
-    internal let identifier: String
+    public let identifier: String
     
     /// Order identifier.
     internal private(set) var orderIdentifier: String?
@@ -25,7 +24,7 @@ internal struct TapPaymentOptionsReponseModel: IdentifiableWithString {
     internal let object: String
     
     /// List of available payment options.
-    internal let paymentOptions: [PaymentOption]
+    public let paymentOptions: [PaymentOption]
     
     /// Transaction currency.
     internal let currency: TapCurrencyCode
@@ -47,12 +46,12 @@ internal struct TapPaymentOptionsReponseModel: IdentifiableWithString {
     
     // MARK: Methods
     
-    private init(identifier:                        String,
-                 orderIdentifier:                   String?,
-                 object:                            String,
-                 paymentOptions:                    [PaymentOption],
-                 currency:                          TapCurrencyCode,
-                 merchantCountryCode:               String?) {
+    public init(identifier:                        String,
+                orderIdentifier:                   String?,
+                object:                            String,
+                paymentOptions:                    [PaymentOption],
+                currency:                          TapCurrencyCode,
+                merchantCountryCode:               String?) {
         
         self.identifier                     = identifier
         self.orderIdentifier                = orderIdentifier
@@ -66,7 +65,7 @@ internal struct TapPaymentOptionsReponseModel: IdentifiableWithString {
 // MARK: - Decodable
 extension TapPaymentOptionsReponseModel: Decodable {
     
-    internal init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         

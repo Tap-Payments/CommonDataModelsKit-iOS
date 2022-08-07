@@ -7,15 +7,16 @@
 //
 
 import Foundation
-/// Singleton shared access to the  common data models shared data
-public let sharedCommongDataModels = SharedCommongDataModels()
+
 /// Shared access to the  common data models shared data
 public class SharedCommongDataModels {
+    /// Singleton shared access to the  common data models shared data
+    public static let sharedCommongDataModels = SharedCommongDataModels()
     
     /// The sdk mode for the current running transction
-    var sdkMode:SDKMode = .sandbox
+    public var sdkMode:SDKMode = .sandbox
     /// The encryption key for the merchant
-    var encryptionKey:String?
+    public var encryptionKey:String?
 }
 
 

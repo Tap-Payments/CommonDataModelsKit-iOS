@@ -8,13 +8,13 @@
 
 import Foundation
 /// Config api response model
-internal struct TapConfigResponseModel {
+public struct TapConfigResponseModel {
     
     // MARK: - Internal -
     // MARK: Properties
     
     /// The middleware token generated for the user for this session
-    internal let token: String?
+    public let token: String?
     
     // MARK: - Private -
     
@@ -27,7 +27,7 @@ internal struct TapConfigResponseModel {
 // MARK: - Equatable
 extension TapConfigResponseModel: Equatable {
     
-    internal static func == (lhs: TapConfigResponseModel, rhs: TapConfigResponseModel) -> Bool {
+    public static func == (lhs: TapConfigResponseModel, rhs: TapConfigResponseModel) -> Bool {
         
         return lhs.token == rhs.token
     }
@@ -36,7 +36,7 @@ extension TapConfigResponseModel: Equatable {
 // MARK: - Decodable
 extension TapConfigResponseModel: Decodable {
     
-    internal init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         

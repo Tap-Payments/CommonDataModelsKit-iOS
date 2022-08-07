@@ -10,7 +10,7 @@ import Foundation
 
 
 /// A protocol to be implemented by all create token requests, we have till now three different token modes for card, saved card and apple pay token.
-internal protocol TapCreateTokenRequest: Encodable {
+public protocol TapCreateTokenRequest: Encodable {
     
     var route: TapNetworkPath { get }
 }

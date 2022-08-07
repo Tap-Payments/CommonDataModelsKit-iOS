@@ -9,13 +9,19 @@
 import Foundation
 
 /// Config request model.
-internal struct TapConfigRequestModel: Encodable {
+public struct TapConfigRequestModel: Encodable {
     
     // MARK: - Internal -
     // MARK: Properties
     
     /// The actual gateway body model for the request
-    internal let gateway: Gateway
+    public let gateway: Gateway
+    
+    /// Config request model.
+    /// - Parameter gateway: The actual gateway body model for the request
+    public init(gateway:Gateway) {
+        self.gateway = gateway
+    }
     
     // MARK: - Private -
     

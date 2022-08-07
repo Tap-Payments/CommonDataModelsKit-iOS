@@ -8,7 +8,7 @@
 
 import Foundation
 /// Gateway part of the Config api request model
-internal struct Gateway: Encodable {
+public struct Gateway: Encodable {
     
     // MARK: - Internal -
     // MARK: Properties
@@ -22,7 +22,7 @@ internal struct Gateway: Encodable {
     
     // MARK: Methods
     
-    internal init(config: Config, merchantId: String?, publicKey: String) {
+    public init(config: Config, merchantId: String?, publicKey: String) {
         
         self.config     = config
         self.merchantId = merchantId
