@@ -122,6 +122,10 @@
 		E8844FC02679C3870073D777 /* ElectricCurrent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB52679C3870073D777 /* ElectricCurrent.swift */; };
 		E8844FC12679C3870073D777 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FB62679C3870073D777 /* Duration.swift */; };
 		E8845109267B44740073D777 /* AmountedCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8845108267B44740073D777 /* AmountedCurrency.swift */; };
+		E89EE06A28C75E1400BB0D0A /* Topup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EE06928C75E1400BB0D0A /* Topup.swift */; };
+		E89EE06C28C75E6400BB0D0A /* TopUpApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EE06B28C75E6400BB0D0A /* TopUpApplication.swift */; };
+		E89EE06E28C75E9300BB0D0A /* TopupChargeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EE06D28C75E9300BB0D0A /* TopupChargeModel.swift */; };
+		E89EE07028C75EE800BB0D0A /* PaymentOptionsOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89EE06F28C75EE800BB0D0A /* PaymentOptionsOrder.swift */; };
 		E8B8CB852442E0730060E0F3 /* CommonDataModelsKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B8CB832442E0730060E0F3 /* CommonDataModelsKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8E2442E0990060E0F3 /* TapCurrencyCode.swift */; };
 		E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B8CB8F2442E0990060E0F3 /* TapCountryCode.swift */; };
@@ -251,6 +255,10 @@
 		E8844FB52679C3870073D777 /* ElectricCurrent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricCurrent.swift; sourceTree = "<group>"; };
 		E8844FB62679C3870073D777 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
 		E8845108267B44740073D777 /* AmountedCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountedCurrency.swift; sourceTree = "<group>"; };
+		E89EE06928C75E1400BB0D0A /* Topup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topup.swift; sourceTree = "<group>"; };
+		E89EE06B28C75E6400BB0D0A /* TopUpApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopUpApplication.swift; sourceTree = "<group>"; };
+		E89EE06D28C75E9300BB0D0A /* TopupChargeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupChargeModel.swift; sourceTree = "<group>"; };
+		E89EE06F28C75EE800BB0D0A /* PaymentOptionsOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionsOrder.swift; sourceTree = "<group>"; };
 		E8B8CB802442E0730060E0F3 /* CommonDataModelsKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonDataModelsKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B8CB832442E0730060E0F3 /* CommonDataModelsKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDataModelsKit_iOS.h; sourceTree = "<group>"; };
 		E8B8CB842442E0730060E0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -505,6 +513,7 @@
 			children = (
 				E85B53E0289F944000362990 /* APiModels */,
 				E85B54FB289FB44F00362990 /* Acquirer.swift */,
+				E89EE06928C75E1400BB0D0A /* Topup.swift */,
 				E85B5505289FB45000362990 /* Authentication.swift */,
 				E85B5506289FB45000362990 /* Authorize.swift */,
 				E85B5500289FB45000362990 /* AuthorizeAction.swift */,
@@ -552,6 +561,9 @@
 				E8B8CB922442E09F0060E0F3 /* TapCard.swift */,
 				E8844BD32676199D0073D777 /* Tax.swift */,
 				E8844FA82679C34C0073D777 /* QuantityModel.swift */,
+				E89EE06B28C75E6400BB0D0A /* TopUpApplication.swift */,
+				E89EE06D28C75E9300BB0D0A /* TopupChargeModel.swift */,
+				E89EE06F28C75EE800BB0D0A /* PaymentOptionsOrder.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -729,6 +741,7 @@
 				E8844D32267750E20073D777 /* TapSDKErrorType.swift in Sources */,
 				E85B5397289F8A0D00362990 /* SourcePaymentType.swift in Sources */,
 				E839252E26A0168A00421E15 /* CardTypeEnum.swift in Sources */,
+				E89EE06A28C75E1400BB0D0A /* Topup.swift in Sources */,
 				E85B53A6289F8A5A00362990 /* Crypter.swift in Sources */,
 				E85B53CD289F8C7E00362990 /* SecretKey.swift in Sources */,
 				E85B539C289F8A0D00362990 /* CardKitErrorType.swift in Sources */,
@@ -748,6 +761,7 @@
 				E8844D422677516F0073D777 /* ErrorDetail.swift in Sources */,
 				E85B53F7289F946700362990 /* TapCreateCardVerificationRequestModel.swift in Sources */,
 				E85B53D1289F8C7E00362990 /* SavedCard.swift in Sources */,
+				E89EE06E28C75E9300BB0D0A /* TopupChargeModel.swift in Sources */,
 				E8B8CB902442E0990060E0F3 /* TapCurrencyCode.swift in Sources */,
 				E8798865245EDDA400D643A2 /* TapCommonConstants.swift in Sources */,
 				E8844D31267750E20073D777 /* ErrorCode.swift in Sources */,
@@ -765,6 +779,7 @@
 				E8844D70267753B20073D777 /* AuthorizeActionType.swift in Sources */,
 				E85B53F8289F946700362990 /* TapAuthenticationRequest.swift in Sources */,
 				E85B5533289FB73900362990 /* TapPaymentOptionsReponseModel.swift in Sources */,
+				E89EE06C28C75E6400BB0D0A /* TopUpApplication.swift in Sources */,
 				E8C590952491FDB900E03424 /* MerchantModel.swift in Sources */,
 				E8844BCA267617260073D777 /* ItemModel.swift in Sources */,
 				E85B53D4289F8C7E00362990 /* ApiErrorModel.swift in Sources */,
@@ -774,6 +789,7 @@
 				E85B5534289FB73900362990 /* TapPaymentOptionsRequestModel.swift in Sources */,
 				E85B53AB289F8BAD00362990 /* SharedCommonDataModels.swift in Sources */,
 				E85B5401289F946700362990 /* TapCreateTokenRequest.swift in Sources */,
+				E89EE07028C75EE800BB0D0A /* PaymentOptionsOrder.swift in Sources */,
 				E85B5536289FB73900362990 /* TapDeleteSavedCardResponseModel.swift in Sources */,
 				E8844FBF2679C3870073D777 /* Volume.swift in Sources */,
 				E85B5513289FB45000362990 /* Destination.swift in Sources */,
