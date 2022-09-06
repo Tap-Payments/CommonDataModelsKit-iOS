@@ -37,13 +37,17 @@ import Foundation
     /// Payment item shiping
     public var requiresShipping: Bool
     /// The raw original price in the original currency
-    public let price : Double?
+    public var price : Double? {
+        didSet {
+            totalAmount = price ?? 0 * quantity
+        }
+    }
     /// The discount applied to the item's price
     public let discount : AmountModificatorModel?
     /// The list of Taxes to be applied to the item's price after discount
     public let taxes : [Tax]?
     /// The price final amount after applyig discount & taxes
-    public var totalAmount:Double {
+    public var totalAmount:Double = 0 {
         didSet {
             // Check if we need to auto compute it
             if totalAmount == 0 { totalAmount = itemFinalPrice() }
@@ -96,10 +100,9 @@ import Foundation
         case title              = "name"
         case itemDescription    = "description"
         case quantity           = "quantity"
-        case price              = "amount_per_unit"
+        case price              = "amount"
         case discount           = "discount"
         case taxes              = "taxes"
-        case totalAmount        = "amount"
         case tags               = "tags"
         case currency           = "currency"
         case productID          = "product_id"
@@ -119,8 +122,7 @@ import Foundation
         quantity = try values.decode(Double.self, forKey: .quantity)
         
         discount = try values.decodeIfPresent(AmountModificatorModel.self, forKey: .discount)
-        taxes = try values.decodeIfPresent([Tax].self, forKey: .taxes) ?? []
-        totalAmount = try values.decodeIfPresent(Double.self, forKey: .totalAmount) ?? 0
+        taxes = try values.decodeIfPresent([Tax].self, forKey: .taxes)
         itemCode = try values.decodeIfPresent (String.self            , forKey: .itemCode        )
         accountCode = try values.decodeIfPresent (String.self            , forKey: .accountCode        )
         requiresShipping = try values.decodeIfPresent (Bool.self            , forKey: .requiresShipping        ) ?? false
