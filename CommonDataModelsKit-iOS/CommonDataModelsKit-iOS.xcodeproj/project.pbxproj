@@ -135,6 +135,7 @@
 		E8C590EA24920D5600E03424 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590E924920D5600E03424 /* String.swift */; };
 		E8C590EC24920D7000E03424 /* TapCurrencyLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */; };
 		E8C590EE24920DB200E03424 /* TapAmountedCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */; };
+		E8CD348028D087470093DA26 /* TapLoyaltyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CD347F28D087470093DA26 /* TapLoyaltyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -270,6 +271,7 @@
 		E8C590E924920D5600E03424 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCurrencyLocale.swift; sourceTree = "<group>"; };
 		E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAmountedCurrencyFormatter.swift; sourceTree = "<group>"; };
+		E8CD347F28D087470093DA26 /* TapLoyaltyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLoyaltyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -564,6 +566,7 @@
 				E89EE06B28C75E6400BB0D0A /* TopUpApplication.swift */,
 				E89EE06D28C75E9300BB0D0A /* TopupChargeModel.swift */,
 				E89EE06F28C75EE800BB0D0A /* PaymentOptionsOrder.swift */,
+				E8CD347F28D087470093DA26 /* TapLoyaltyModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 				E8C590952491FDB900E03424 /* MerchantModel.swift in Sources */,
 				E8844BCA267617260073D777 /* ItemModel.swift in Sources */,
 				E85B53D4289F8C7E00362990 /* ApiErrorModel.swift in Sources */,
+				E8CD348028D087470093DA26 /* TapLoyaltyModel.swift in Sources */,
 				E8844BD1267617F40073D777 /* AmountMoficiationType.swift in Sources */,
 				E85B5400289F946700362990 /* TapConfigResponseModel.swift in Sources */,
 				E85B53CA289F8C7E00362990 /* Merchant.swift in Sources */,
