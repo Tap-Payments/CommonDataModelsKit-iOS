@@ -107,7 +107,6 @@
 		E8844D662677538A0073D777 /* ExtensionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D642677538A0073D777 /* ExtensionProtocols.swift */; };
 		E8844D6D267753B20073D777 /* TapPaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D68267753B20073D777 /* TapPaymentType.swift */; };
 		E8844D6E267753B20073D777 /* cardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D69267753B20073D777 /* cardType.swift */; };
-		E8844D70267753B20073D777 /* AuthorizeActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D6B267753B20073D777 /* AuthorizeActionType.swift */; };
 		E8844D71267753B20073D777 /* TransactionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D6C267753B20073D777 /* TransactionMode.swift */; };
 		E8844FA92679C34C0073D777 /* QuantityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FA82679C34C0073D777 /* QuantityModel.swift */; };
 		E8844FB72679C3870073D777 /* _ObjCMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAC2679C3870073D777 /* _ObjCMeasurement.swift */; };
@@ -656,7 +655,7 @@
 		E8B8CB772442E0730060E0F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Tap Payments";
 				TargetAttributes = {
 					E8B8CB7F2442E0730060E0F3 = {
@@ -779,7 +778,6 @@
 				E8844D6E267753B20073D777 /* cardType.swift in Sources */,
 				E8844FBC2679C3870073D777 /* Energy.swift in Sources */,
 				E85B5399289F8A0D00362990 /* AddressType.swift in Sources */,
-				E8844D70267753B20073D777 /* AuthorizeActionType.swift in Sources */,
 				E85B53F8289F946700362990 /* TapAuthenticationRequest.swift in Sources */,
 				E85B5533289FB73900362990 /* TapPaymentOptionsReponseModel.swift in Sources */,
 				E89EE06C28C75E6400BB0D0A /* TopUpApplication.swift in Sources */,
