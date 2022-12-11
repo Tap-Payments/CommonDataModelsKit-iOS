@@ -37,8 +37,6 @@ extension CardKitErrorType: CustomStringConvertible {
     @objc(TokenizeEnded)            case TokenizeEnded
     @objc(SaveCardStarted)          case SaveCardStarted
     @objc(SaveCardEnded)            case SaveCardEnded
-    @objc(SaveCardEnabled)          case SaveCardEnabled
-    @objc(SaveCardDisabled)         case SaveCardDisabled
     @objc(ThreeDSStarter)           case ThreeDSStarter
     @objc(ThreeDSEnded)             case ThreeDSEnded
 }
@@ -49,7 +47,7 @@ extension CardKitEventType: CustomStringConvertible {
     public var description: String {
         
         switch self {
-            
+        
         case .CardNotReady:
             return "Card data is not ready for any action"
         case .CardReady:
@@ -66,10 +64,6 @@ extension CardKitEventType: CustomStringConvertible {
             return "ThreeDS process started"
         case .ThreeDSEnded:
             return "ThreeDS process ended"
-        case .SaveCardEnabled:
-            return "User enabled saving the card"
-        case .SaveCardDisabled:
-            return "User disabled saving the card"
         }
     }
 }
