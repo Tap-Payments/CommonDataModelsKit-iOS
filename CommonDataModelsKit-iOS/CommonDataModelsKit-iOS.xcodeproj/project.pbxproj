@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C63150AE323BEBFF192D20DF /* Pods_CommonDataModelsKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51E6438808EE2203ECFAEBA /* Pods_CommonDataModelsKit_iOS.framework */; };
 		E808465929772DCF003F9AD6 /* WebViewTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808465829772DCF003F9AD6 /* WebViewTypeEnum.swift */; };
+		E81F43C3297D329A007265E9 /* NewApiErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81F43C2297D329A007265E9 /* NewApiErrorModel.swift */; };
 		E839252E26A0168A00421E15 /* CardTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E839252D26A0168A00421E15 /* CardTypeEnum.swift */; };
 		E85B5395289F8A0D00362990 /* AddressFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B5389289F8A0C00362990 /* AddressFormat.swift */; };
 		E85B5396289F8A0D00362990 /* URLStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85B538A289F8A0C00362990 /* URLStatus.swift */; };
@@ -146,6 +147,7 @@
 		73F459408BDF9D842EDC8FF0 /* Pods-CommonDataModelsKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonDataModelsKit-iOS.release.xcconfig"; path = "Target Support Files/Pods-CommonDataModelsKit-iOS/Pods-CommonDataModelsKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C51E6438808EE2203ECFAEBA /* Pods_CommonDataModelsKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonDataModelsKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E808465829772DCF003F9AD6 /* WebViewTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewTypeEnum.swift; sourceTree = "<group>"; };
+		E81F43C2297D329A007265E9 /* NewApiErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewApiErrorModel.swift; sourceTree = "<group>"; };
 		E839252D26A0168A00421E15 /* CardTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeEnum.swift; sourceTree = "<group>"; };
 		E85B5389289F8A0C00362990 /* AddressFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressFormat.swift; sourceTree = "<group>"; };
 		E85B538A289F8A0C00362990 /* URLStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLStatus.swift; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 		E8844D362677516F0073D777 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
+				E81F43C2297D329A007265E9 /* NewApiErrorModel.swift */,
 				E8844D342677516F0073D777 /* TapSDKKnownError.swift */,
 				E8844D392677516F0073D777 /* APIError.swift */,
 				E8844D352677516F0073D777 /* ErrorDetail.swift */,
@@ -813,6 +816,7 @@
 				E85B53CB289F8C7E00362990 /* TokenizedCard.swift in Sources */,
 				E85B539A289F8A0D00362990 /* SourceObject.swift in Sources */,
 				E8844FBD2679C3870073D777 /* Area.swift in Sources */,
+				E81F43C3297D329A007265E9 /* NewApiErrorModel.swift in Sources */,
 				E8844FB92679C3870073D777 /* Length.swift in Sources */,
 				E85B53C9289F8C7E00362990 /* TransactionExpiry.swift in Sources */,
 				E85B5395289F8A0D00362990 /* AddressFormat.swift in Sources */,
