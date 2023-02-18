@@ -140,6 +140,7 @@
 		E8C590EC24920D7000E03424 /* TapCurrencyLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */; };
 		E8C590EE24920DB200E03424 /* TapAmountedCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */; };
 		E8CD348028D087470093DA26 /* TapLoyaltyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CD347F28D087470093DA26 /* TapLoyaltyModel.swift */; };
+		E8DE2C8F29A0B73000A02639 /* TapLoggingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DE2C8E29A0B73000A02639 /* TapLoggingType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -281,6 +282,7 @@
 		E8C590EB24920D7000E03424 /* TapCurrencyLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapCurrencyLocale.swift; sourceTree = "<group>"; };
 		E8C590ED24920DB200E03424 /* TapAmountedCurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAmountedCurrencyFormatter.swift; sourceTree = "<group>"; };
 		E8CD347F28D087470093DA26 /* TapLoyaltyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapLoyaltyModel.swift; sourceTree = "<group>"; };
+		E8DE2C8E29A0B73000A02639 /* TapLoggingType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapLoggingType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -584,6 +586,7 @@
 		E8B8CB8D2442E0870060E0F3 /* enums */ = {
 			isa = PBXGroup;
 			children = (
+				E8DE2C8E29A0B73000A02639 /* TapLoggingType.swift */,
 				E808465829772DCF003F9AD6 /* WebViewTypeEnum.swift */,
 				E89B3A89291109E30094E1D9 /* SaveCardCustomerDataSectionEnum.swift */,
 				E89B3A87291109E30094E1D9 /* SaveCardCustomerDataSFieldEnum.swift */,
@@ -832,6 +835,7 @@
 				E8844FA92679C34C0073D777 /* QuantityModel.swift in Sources */,
 				E8844D61267753770073D777 /* TapMetaData.swift in Sources */,
 				E85B539E289F8A0D00362990 /* SourceType.swift in Sources */,
+				E8DE2C8F29A0B73000A02639 /* TapLoggingType.swift in Sources */,
 				E85B5515289FB45000362990 /* Response.swift in Sources */,
 				E8844D492677516F0073D777 /* TapSDKError.swift in Sources */,
 				E8844D60267753770073D777 /* TapEmailAddress.swift in Sources */,
