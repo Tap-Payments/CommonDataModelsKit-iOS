@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CommonDataModelsKit-iOS"
-  spec.version      = "1.0.110"
+  spec.version      = "1.0.111"
   spec.summary      = "Common data models and enums between different kits"
 
   # This description is used to generate tags and improve search results.
