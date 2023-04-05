@@ -110,8 +110,6 @@
 		E8844D6D267753B20073D777 /* TapPaymentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D68267753B20073D777 /* TapPaymentType.swift */; };
 		E8844D6E267753B20073D777 /* cardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D69267753B20073D777 /* cardType.swift */; };
 		E8844D71267753B20073D777 /* TransactionMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844D6C267753B20073D777 /* TransactionMode.swift */; };
-		E8844FA92679C34C0073D777 /* QuantityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FA82679C34C0073D777 /* QuantityModel.swift */; };
-		E8844FB72679C3870073D777 /* _ObjCMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAC2679C3870073D777 /* _ObjCMeasurement.swift */; };
 		E8844FB82679C3870073D777 /* Power.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAD2679C3870073D777 /* Power.swift */; };
 		E8844FB92679C3870073D777 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAE2679C3870073D777 /* Length.swift */; };
 		E8844FBA2679C3870073D777 /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8844FAF2679C3870073D777 /* Measurement.swift */; };
@@ -250,8 +248,6 @@
 		E8844D69267753B20073D777 /* cardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardType.swift; sourceTree = "<group>"; };
 		E8844D6B267753B20073D777 /* AuthorizeActionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeActionType.swift; sourceTree = "<group>"; };
 		E8844D6C267753B20073D777 /* TransactionMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionMode.swift; sourceTree = "<group>"; };
-		E8844FA82679C34C0073D777 /* QuantityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityModel.swift; sourceTree = "<group>"; };
-		E8844FAC2679C3870073D777 /* _ObjCMeasurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ObjCMeasurement.swift; sourceTree = "<group>"; };
 		E8844FAD2679C3870073D777 /* Power.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Power.swift; sourceTree = "<group>"; };
 		E8844FAE2679C3870073D777 /* Length.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
 		E8844FAF2679C3870073D777 /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Measurement.swift; sourceTree = "<group>"; };
@@ -465,7 +461,6 @@
 		E8844FAB2679C3870073D777 /* Measurements */ = {
 			isa = PBXGroup;
 			children = (
-				E8844FAC2679C3870073D777 /* _ObjCMeasurement.swift */,
 				E8844FAD2679C3870073D777 /* Power.swift */,
 				E8844FAE2679C3870073D777 /* Length.swift */,
 				E8844FAF2679C3870073D777 /* Measurement.swift */,
@@ -574,7 +569,6 @@
 				E8C590942491FDB900E03424 /* MerchantModel.swift */,
 				E8B8CB922442E09F0060E0F3 /* TapCard.swift */,
 				E8844BD32676199D0073D777 /* Tax.swift */,
-				E8844FA82679C34C0073D777 /* QuantityModel.swift */,
 				E89EE06B28C75E6400BB0D0A /* TopUpApplication.swift */,
 				E89EE06D28C75E9300BB0D0A /* TopupChargeModel.swift */,
 				E89EE06F28C75EE800BB0D0A /* PaymentOptionsOrder.swift */,
@@ -774,7 +768,6 @@
 				E85B5535289FB73900362990 /* TapAuthorizeRequestModel.swift in Sources */,
 				E89B3A8C291109E30094E1D9 /* SaveCardCustomerDataSectionEnum.swift in Sources */,
 				E8844FB82679C3870073D777 /* Power.swift in Sources */,
-				E8844FB72679C3870073D777 /* _ObjCMeasurement.swift in Sources */,
 				E85B53DC289F8C7E00362990 /* TrackingURL.swift in Sources */,
 				E85B53FD289F946700362990 /* Gateway.swift in Sources */,
 				E85B53DB289F8C7E00362990 /* SourceRequest.swift in Sources */,
@@ -832,7 +825,6 @@
 				E8B8CB912442E0990060E0F3 /* TapCountryCode.swift in Sources */,
 				E8C590EE24920DB200E03424 /* TapAmountedCurrencyFormatter.swift in Sources */,
 				E85B550F289FB45000362990 /* Acquirer.swift in Sources */,
-				E8844FA92679C34C0073D777 /* QuantityModel.swift in Sources */,
 				E8844D61267753770073D777 /* TapMetaData.swift in Sources */,
 				E85B539E289F8A0D00362990 /* SourceType.swift in Sources */,
 				E8DE2C8F29A0B73000A02639 /* TapLoggingType.swift in Sources */,
