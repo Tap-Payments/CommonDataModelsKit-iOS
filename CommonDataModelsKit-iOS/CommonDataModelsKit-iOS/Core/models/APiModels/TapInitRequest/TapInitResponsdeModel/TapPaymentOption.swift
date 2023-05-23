@@ -91,7 +91,7 @@ public struct PaymentOption: IdentifiableWithString {
         if #available(iOS 12.0, *) {
             if UIScreen.main.traitCollection.userInterfaceStyle == .light {
                 if showMonoForLightMode {
-                    guard let lightMonoModePNGString = logos.light_colored?.png,
+                    guard let lightMonoModePNGString = logos.lightColored?.png,
                           let lightMonoModePNGUrl    = URL(string: lightMonoModePNGString) else { return lightModePNGUrl }
                     return lightMonoModePNGUrl
                 }
@@ -105,6 +105,70 @@ public struct PaymentOption: IdentifiableWithString {
         }
         
     }
+    
+    
+    /// Will do the correct fetching of which disabled image to use, the default backend url or the correct light-dark cdn hosted url
+    /// - Parameter showMonoForLightMode: Indicates whether to show the light or the light colored
+    public func correctDisabledImageURL(showMonoForLightMode:Bool = false) -> URL {
+        // Check if we have right values passed in the cdn logos options
+        guard let logos = paymentOptionsLogos,
+              let lightModePNGString = logos.light?.disabled?.png,
+              let darkModePNGString  = logos.dark?.disabled?.png,
+              let lightModePNGUrl    = URL(string: lightModePNGString),
+              let darkModePNGUrl     = URL(string: darkModePNGString) else { return backendImageURL }  // TODO:- need url for disabled also to fallback
+        
+        
+        // we will return based on the theme
+        if #available(iOS 12.0, *) {
+            if UIScreen.main.traitCollection.userInterfaceStyle == .light {
+                if showMonoForLightMode {
+                    guard let lightMonoModePNGString = logos.lightColored?.disabled?.png,
+                          let lightMonoModePNGUrl    = URL(string: lightMonoModePNGString) else { return lightModePNGUrl }
+                    return lightMonoModePNGUrl
+                }
+                return lightModePNGUrl
+            } else {
+                return darkModePNGUrl
+            }
+        } else {
+            // Fallback on earlier versions
+            return lightModePNGUrl
+        }
+        
+        
+    }
+    
+    /// Will do the correct fetching of which currency widget image to use, the default backend url or the correct light-dark cdn hosted url
+    /// - Parameter showMonoForLightMode: Indicates whether to show the light or the light colored
+    public func correctCurrencyWidgetImageURL(showMonoForLightMode:Bool = false) -> URL {
+        // Check if we have right values passed in the cdn logos options
+        guard let logos = paymentOptionsLogos,
+              let lightModePNGString = logos.light?.currencyWidget?.png,
+              let darkModePNGString  = logos.dark?.currencyWidget?.png,
+              let lightModePNGUrl    = URL(string: lightModePNGString),
+              let darkModePNGUrl     = URL(string: darkModePNGString) else { return backendImageURL }  // TODO:- need url for currency Widget also to fallback
+        
+        
+        // we will return based on the theme
+        if #available(iOS 12.0, *) {
+            if UIScreen.main.traitCollection.userInterfaceStyle == .light {
+                if showMonoForLightMode {
+                    guard let lightMonoModePNGString = logos.lightColored?.currencyWidget?.png,
+                          let lightMonoModePNGUrl    = URL(string: lightMonoModePNGString) else { return lightModePNGUrl }
+                    return lightMonoModePNGUrl
+                }
+                return lightModePNGUrl
+            } else {
+                return darkModePNGUrl
+            }
+        } else {
+            // Fallback on earlier versions
+            return lightModePNGUrl
+        }
+        
+        
+    }
+    
     
     // MARK: - Private -
     
@@ -252,6 +316,24 @@ public struct PaymentOptionLogo: Codable {
     /// The SVG url
     public let svg: String?
     /// The PNG url
+    public let png: String?
+    /// The disabled logo
+    public let disabled: PaymentOptionExtraLogo?
+    /// The currency_widget logo
+    public let currencyWidget: PaymentOptionExtraLogo?
+    
+    // MARK: - Private -
+    
+    private enum CodingKeys : String, CodingKey {
+        case svg, currencyWidget = "currency_widget", png, disabled
+    }
+}
+
+///// Payment Option extra Logos model.
+public struct PaymentOptionExtraLogo: Codable {
+    /// The SVG url
+    public let svg: String?
+    /// The PNG url
     public let png:String?
 }
 
@@ -263,5 +345,12 @@ public struct PaymentOptionLogos: Codable {
     /// The dark icons urls
     public let dark: PaymentOptionLogo?
     /// The light_colored icons urls
-    public let light_colored: PaymentOptionLogo?
+    public let lightColored: PaymentOptionLogo?
+    
+    
+    // MARK: - Private -
+    
+    private enum CodingKeys : String, CodingKey {
+        case light, lightColored = "light_colored", dark
+    }
 }
