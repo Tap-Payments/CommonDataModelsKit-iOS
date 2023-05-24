@@ -12,10 +12,11 @@ import TapCardVlidatorKit_iOS
 /// Payment Option model.
 public struct PaymentOption: IdentifiableWithString {
     
-    public init(identifier: String, brand: CardBrand, title: String, backendImageURL: URL, isAsync: Bool, paymentType: TapPaymentType, sourceIdentifier: String? = nil, supportedCardBrands: [CardBrand], supportedCurrencies: [TapCurrencyCode], orderBy: Int, threeDLevel: ThreeDSecurityState, savedCard: SavedCard? = nil, extraFees: [ExtraFee] = [], paymentOptionsLogos:PaymentOptionLogos? = nil, buttonStyle: PaymentOptionButtonStyle? = nil) {
+    public init(identifier: String, brand: CardBrand, title: String,  arabicTitle: String,backendImageURL: URL, isAsync: Bool, paymentType: TapPaymentType, sourceIdentifier: String? = nil, supportedCardBrands: [CardBrand], supportedCurrencies: [TapCurrencyCode], orderBy: Int, threeDLevel: ThreeDSecurityState, savedCard: SavedCard? = nil, extraFees: [ExtraFee] = [], paymentOptionsLogos:PaymentOptionLogos? = nil, buttonStyle: PaymentOptionButtonStyle? = nil) {
         self.identifier = identifier
         self.brand = brand
         self.title = title
+        self.arabicTitle = arabicTitle
         self.backendImageURL = backendImageURL
         self.isAsync = isAsync
         self.paymentType = paymentType
@@ -42,6 +43,9 @@ public struct PaymentOption: IdentifiableWithString {
     
     /// Name of the payment option.
     public var title: String
+    
+    /// Name of the payment option.
+    public var arabicTitle: String
     
     /// Image URL of the payment option.
     public let backendImageURL: URL
@@ -180,6 +184,7 @@ public struct PaymentOption: IdentifiableWithString {
         
         case identifier             = "id"
         case title                  = "name"
+        case arabicTitle            = "name_ar"
         case backendImageURL        = "image"
         case paymentType            = "payment_type"
         case sourceIdentifier       = "source_id"
@@ -261,6 +266,7 @@ extension PaymentOption: Decodable {
         let identifier          = try container.decode          (String.self,                   forKey: .identifier)
         let brand               = try container.decode          (CardBrand.self,                forKey: .title)
         let title               = try container.decode          (String.self,                   forKey: .title)
+        let arabicTitle         = try container.decode          (String.self,                   forKey: .arabicTitle)
         let imageURL            = try container.decode          (URL.self,                      forKey: .backendImageURL)
         let paymentType         = try container.decode          (TapPaymentType.self,           forKey: .paymentType)
         let sourceIdentifier    = try container.decodeIfPresent (String.self,                   forKey: .sourceIdentifier)
@@ -277,6 +283,7 @@ extension PaymentOption: Decodable {
         self.init(identifier: identifier,
                   brand: brand,
                   title: title,
+                  arabicTitle: arabicTitle,
                   backendImageURL: imageURL,
                   isAsync: isAsync, paymentType: paymentType,
                   sourceIdentifier: sourceIdentifier,
