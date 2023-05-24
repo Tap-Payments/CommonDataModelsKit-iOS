@@ -12,11 +12,12 @@ import TapCardVlidatorKit_iOS
 /// Payment Option model.
 public struct PaymentOption: IdentifiableWithString {
     
-    public init(identifier: String, brand: CardBrand, title: String,  titleAr: String,backendImageURL: URL, isAsync: Bool, paymentType: TapPaymentType, sourceIdentifier: String? = nil, supportedCardBrands: [CardBrand], supportedCurrencies: [TapCurrencyCode], orderBy: Int, threeDLevel: ThreeDSecurityState, savedCard: SavedCard? = nil, extraFees: [ExtraFee] = [], paymentOptionsLogos:PaymentOptionLogos? = nil, buttonStyle: PaymentOptionButtonStyle? = nil) {
+    public init(identifier: String, brand: CardBrand, title: String,  titleAr: String, displayableTitle:String? = nil, backendImageURL: URL, isAsync: Bool, paymentType: TapPaymentType, sourceIdentifier: String? = nil, supportedCardBrands: [CardBrand], supportedCurrencies: [TapCurrencyCode], orderBy: Int, threeDLevel: ThreeDSecurityState, savedCard: SavedCard? = nil, extraFees: [ExtraFee] = [], paymentOptionsLogos:PaymentOptionLogos? = nil, buttonStyle: PaymentOptionButtonStyle? = nil) {
         self.identifier = identifier
         self.brand = brand
         self.title = title
         self.titleAr = titleAr
+        self.displayableTitle = displayableTitle ?? title
         self.backendImageURL = backendImageURL
         self.isAsync = isAsync
         self.paymentType = paymentType
@@ -46,6 +47,9 @@ public struct PaymentOption: IdentifiableWithString {
     
     /// Arabic name of the payment option.
     public var titleAr: String
+    
+    /// The title to be displayed inside the currency widget
+    public var displayableTitle: String
     
     /// Image URL of the payment option.
     public let backendImageURL: URL
@@ -205,6 +209,7 @@ public struct PaymentOption: IdentifiableWithString {
         case threeDLevel            = "threeDS"
         case paymentoptionsLogos    = "logos"
         case buttonStyle            = "button_style"
+        case displayableTitle       = "display_name"
     }
     
     private static func mapThreeDLevel(with threeD:String) -> ThreeDSecurityState
@@ -277,6 +282,7 @@ extension PaymentOption: Decodable {
         let brand               = try container.decode          (CardBrand.self,                forKey: .title)
         let title               = try container.decode          (String.self,                   forKey: .title)
         let titleAr             = try container.decode          (String.self,                   forKey: .titleAr)
+        let displayableTitle    = try container.decodeIfPresent (String.self,                   forKey: .displayableTitle) ?? title
         let imageURL            = try container.decode          (URL.self,                      forKey: .backendImageURL)
         let paymentType         = try container.decode          (TapPaymentType.self,           forKey: .paymentType)
         let sourceIdentifier    = try container.decodeIfPresent (String.self,                   forKey: .sourceIdentifier)
