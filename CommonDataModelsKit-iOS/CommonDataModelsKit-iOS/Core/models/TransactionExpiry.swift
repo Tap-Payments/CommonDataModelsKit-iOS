@@ -6,27 +6,27 @@
 //
 
 @objcMembers
-@objc(CheckoutTransactionExpiry) public final class TransactionExpiry: NSObject{
+@objc(CheckoutTransactionOrder) public final class TransactionOrder: NSObject{
     
     // MARK: - Public -
     // MARK: Properties
     
-    /// Transaction Exxpiry period count.
-    public let period: Int
-    /// Transaction Exxpiry period component (months, days, minutes, etc.)
-    public let type: String
+    /// Order reference by merchant
+    public let reference: String
+	/// Merchant's more info url
+    public let storeUrl: String
     
     // MARK: Methods
     
-    /// Initializes expiration object with time left and time component
+    /// Initializes order object with order  number and merchant's info
     ///
     /// - Parameters:
-    ///   - period: The count left until epxiration
-    ///   - orderNumber: Decsripes what component does this count stands for, e.g. minutes, seconds, etc.
-    public init(period: Int, type: String) {
+    ///   - reference: Order reference number provided by Merchant
+    ///   - storeUrl: Url to show more info about  the order on the Merchant side
+    public init(reference: String, storeUrl: String) {
         
-        self.period = period
-        self.type = type
+        self.reference = reference
+        self.storeUrl = storeUrl
         
         super.init()
     }
@@ -35,45 +35,32 @@
     
     private enum CodingKeys: String, CodingKey {
         
-        case type     = "type"
-        case period   = "period"
+        case reference  = "reference"
+        case storeUrl   = "store_url"
     }
 }
 
+// MARK: - Encodable
+extension TransactionOrder: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeIfPresent(reference, forKey: .reference)
+        try container.encodeIfPresent(storeUrl, forKey: .storeUrl)
+    }
+}
+
+
 // MARK: - Decodable
-extension TransactionExpiry: Decodable {
+extension TransactionOrder: Decodable {
     
     public convenience init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        let type        = try container.decode            (String.self,   forKey: .type)
-        let period      = try container.decode          (Int.self,     forKey: .period)
+        let reference        = try container.decode 			(String.self,   forKey: .reference)
+        let storeUrl      	 = try container.decode          	(String.self,   forKey: .storeUrl)
         
-        self.init(period: period, type: type)
-    }
-}
-
-extension TransactionExpiry {
-    
-    /// transfers the expiration type to an understandable swift calendar component
-    public func toCalendarComponent () -> Calendar.Component? {
-        
-        if type.lowercased().hasPrefix("second") {
-            return .second
-        }else if type.lowercased().hasPrefix("minute") {
-            return .minute
-        }else if type.lowercased().hasPrefix("hour") {
-            return .hour
-        }else if type.lowercased().hasPrefix("day") {
-            return .day
-        }else if type.lowercased().hasPrefix("month") {
-            return .month
-        }else if type.lowercased().hasPrefix("year") {
-            return .year
-        }
-        
-        return nil
+        self.init(reference: reference, storeUrl: storeUrl)
     }
 }
 

@@ -15,6 +15,11 @@
     @objc(All)          case All
 }
 
+// MARK: - Encodable
+extension cardTypes: Encodable {
+}
+
+
 // MARK: - CustomStringConvertible
 extension cardTypes: CustomStringConvertible {
     

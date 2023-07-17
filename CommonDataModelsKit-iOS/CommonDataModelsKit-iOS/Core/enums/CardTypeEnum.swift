@@ -39,3 +39,17 @@ import Foundation
         }
     }
 }
+
+
+// MARK: - Encodable
+extension CardType: Encodable {
+    private enum CodingKeys: String, CodingKey {
+        
+        case cardType = "cardType"
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeIfPresent(cardType, forKey: .cardType)
+    }
+}
