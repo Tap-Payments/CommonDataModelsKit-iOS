@@ -9,7 +9,7 @@
 import Foundation
 /// Card Types the merchanty will use to define what types of cards he wants his clients to use
 @objcMembers
-@objc(CheckoutCardType) public class CardType:NSObject {
+@objc(CheckoutCardType) public class CardType:NSObject, Decodable {
     
     
     public var cardType:cardTypes = .All
@@ -38,14 +38,23 @@ import Foundation
             return false
         }
     }
+    
+    required public convenience init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let cardType  = try container.decode(String.self, forKey: .cardType)
+        self.init(cardTypeString: cardType)
+    }
 }
+
+
+
 
 
 // MARK: - Encodable
 extension CardType: Encodable {
     private enum CodingKeys: String, CodingKey {
         
-        case cardType = "cardType"
+        case cardType = "card_type"
     }
     
     public func encode(to encoder: Encoder) throws {
