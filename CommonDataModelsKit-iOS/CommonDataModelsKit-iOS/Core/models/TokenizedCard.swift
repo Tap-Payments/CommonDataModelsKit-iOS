@@ -90,6 +90,26 @@ import TapCardVlidatorKit_iOS
     }
 }
 
+// MARK: - Encodable
+extension TokenizedCard: Encodable {
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeIfPresent(identifier, forKey: .identifier)
+        try container.encodeIfPresent(object, forKey: .object)
+        try container.encodeIfPresent(lastFourDigits, forKey: .lastFourDigits)
+        try container.encodeIfPresent(expirationMonth, forKey: .expirationMonth)
+        try container.encodeIfPresent(expirationYear, forKey: .expirationYear)
+        try container.encodeIfPresent(binNumber, forKey: .binNumber)
+        try container.encodeIfPresent(brand, forKey: .brand)
+        try container.encodeIfPresent(funding, forKey: .funding)
+        try container.encodeIfPresent(cardholderName, forKey: .cardholderName)
+        try container.encodeIfPresent(customerIdentifier, forKey: .customerIdentifier)
+        try container.encodeIfPresent(fingerprint, forKey: .fingerprint)
+        try container.encodeIfPresent(address, forKey: .address)
+        try container.encodeIfPresent(issuer, forKey: .issuer)
+    }
+}
+
 // MARK: - Decodable
 extension TokenizedCard: Decodable {
     
@@ -108,8 +128,8 @@ extension TokenizedCard: Decodable {
         let cardholderName     = try container.decodeIfPresent                  (String.self,       forKey: .cardholderName)
         let customerIdentifier = try container.decodeIfPresent                     (String.self,       forKey: .customerIdentifier)
         let fingerprint        = try container.decode                              (String.self,       forKey: .fingerprint)
-        let address            = try container.decodeIfPresent    (Address.self,      forKey: .address)
-        let issuer             = try container.decodeIfPresent    (Issuer.self,      forKey: .issuer)
+        let address            = try container.decodeIfPresent                    (Address.self,      forKey: .address)
+        let issuer             = try container.decodeIfPresent                  (Issuer.self,      forKey: .issuer)
         
         self.init(identifier:           identifier,
                   object:               object,
