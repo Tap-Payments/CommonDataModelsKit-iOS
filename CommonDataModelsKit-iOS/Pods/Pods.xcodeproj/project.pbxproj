@@ -1440,9 +1440,9 @@
 			};
 			name = Release;
 		};
-		748BBE05452BED71659EDABBDE16ED70 /* Debug */ = {
+		B543282BF6FA33080B521BD4FE05D89E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9668262E21A9C0DD0A4B5C9B301C7CE6 /* TapKeychainV2.debug.xcconfig */;
+			baseConfigurationReference = 94B0F3D94D688212E8E8421C6A34C595 /* TapKeychainV2.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1456,7 +1456,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TapKeychainV2/TapKeychainV2-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TapKeychainV2/TapKeychainV2-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1470,10 +1470,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		C287237EFD750396F0B8B4A872D2B9AD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1572,6 +1573,41 @@
 				MODULEMAP_FILE = "Target Support Files/TapAdditionsKitV2/TapAdditionsKitV2.modulemap";
 				PRODUCT_MODULE_NAME = TapAdditionsKitV2;
 				PRODUCT_NAME = TapAdditionsKitV2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0BBCAB010D7EDB9A5607817C342E61B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9668262E21A9C0DD0A4B5C9B301C7CE6 /* TapKeychainV2.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TapKeychainV2/TapKeychainV2-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TapKeychainV2/TapKeychainV2-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TapKeychainV2/TapKeychainV2.modulemap";
+				PRODUCT_MODULE_NAME = TapKeychainV2;
+				PRODUCT_NAME = TapKeychainV2;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1688,42 +1724,6 @@
 			};
 			name = Release;
 		};
-		E61C7D68F63D5F8961BA2FE03ABCAACF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94B0F3D94D688212E8E8421C6A34C595 /* TapKeychainV2.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TapKeychainV2/TapKeychainV2-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TapKeychainV2/TapKeychainV2-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/TapKeychainV2/TapKeychainV2.modulemap";
-				PRODUCT_MODULE_NAME = TapKeychainV2;
-				PRODUCT_NAME = TapKeychainV2;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1784,8 +1784,8 @@
 		FD6FAC527AE2983D6F2261EA803E4C1A /* Build configuration list for PBXNativeTarget "TapKeychainV2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				748BBE05452BED71659EDABBDE16ED70 /* Debug */,
-				E61C7D68F63D5F8961BA2FE03ABCAACF /* Release */,
+				D0BBCAB010D7EDB9A5607817C342E61B /* Debug */,
+				B543282BF6FA33080B521BD4FE05D89E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

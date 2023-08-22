@@ -5,7 +5,7 @@ PODS:
   - TapAdditionsKitV2 (0.0.14):
     - TapSwiftFixesV2
   - TapCardVlidatorKit-iOS (1.0.21)
-  - TapKeychainV2 (1.0.1)
+  - TapKeychainV2 (1.0.2)
   - TapSwiftFixesV2 (1.0.2):
     - TapSwiftFixesV2/CoreGraphics (= 1.0.2)
     - TapSwiftFixesV2/Exceptions (= 1.0.2)
@@ -32,7 +32,7 @@ SPEC CHECKSUMS:
   SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
   TapAdditionsKitV2: 49dee4ed7d836ad6ed708a5c4ce708edb6245103
   TapCardVlidatorKit-iOS: c7be3b2831dd7f327ae8c4df328eb625653b4232
-  TapKeychainV2: 8fd0894d32a6ce640c65b166f05d75a1e720fdec
+  TapKeychainV2: aaa08a208f3e7aea042e2caf1b6b5abb39baecdc
   TapSwiftFixesV2: ae0fb37e42be6ed389fdfc50d72abb5da958ef5c
 
 PODFILE CHECKSUM: 9f86ef1efe21d474daf3ab783eeb291ae714aca0
