@@ -5,7 +5,7 @@
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
-import TapSwiftFixesV2
+//import TapSwiftFixesV2
 import class	UIKit.UITableView.UITableView
 
 /// Useful extension for UITableView
@@ -26,10 +26,10 @@ public extension UITableView {
             self.reloadRows(at: indexPaths, with: animation)
         }
         
-        if !catchException(closure, nil) {
+        /*if !catchException(closure, nil) {
             
             self.reloadData()
-        }
+        }*/
         
         if animation == .none {
             

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import TapSwiftFixesV2
+//import TapSwiftFixesV2
 
 /// JSON Serialization protocol.
 public protocol JSONSerializable {
@@ -83,7 +83,7 @@ fileprivate extension JSONSerialization {
             data = try? JSONSerialization.data(withJSONObject: object, options: options)
         }
         
-        catchException(closure, nil)
+        //catchException(closure, nil)
         
         if let nonnullData = data {
             
