@@ -8,6 +8,6 @@ target 'CommonDataModelsKit-iOS' do
   # Pods for CommonDataModelsKit-iOS
   pod 'TapAdditionsKitV2'
   pod 'SwiftyRSA'
-  pod 'TapKeychain'
+  pod 'TapKeychainV2'
   pod 'TapCardVlidatorKit-iOS'
 end

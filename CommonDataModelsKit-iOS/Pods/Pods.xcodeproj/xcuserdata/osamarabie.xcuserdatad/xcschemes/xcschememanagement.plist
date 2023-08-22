@@ -32,7 +32,7 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
-		<key>TapKeychain.xcscheme</key>
+		<key>TapKeychainV2.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

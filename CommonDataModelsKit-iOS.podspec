@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CommonDataModelsKit-iOS"
-  spec.version      = "1.0.139"
+  spec.version      = "1.0.140"
   spec.summary      = "Common data models and enums between different kits"
 
   # This description is used to generate tags and improve search results.
@@ -134,7 +134,7 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
   spec.dependency "TapAdditionsKitV2"
   spec.dependency "SwiftyRSA"
-  spec.dependency "TapKeychain"
+  spec.dependency "TapKeychainV2"
   spec.dependency "TapCardVlidatorKit-iOS"
 
 
