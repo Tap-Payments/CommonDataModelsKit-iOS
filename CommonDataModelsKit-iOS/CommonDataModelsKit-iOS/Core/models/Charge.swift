@@ -4,6 +4,7 @@
 //
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
+import Foundation
 
 /// Charge model.
 /// To charge a credit or a debit card, you create a charge object.

@@ -6,6 +6,8 @@
 //
 
 import TapCardVlidatorKit_iOS
+import Foundation
+
 /// Tokenized card model.
 @objcMembers public final class TokenizedCard: IdentifiableWithString {
     

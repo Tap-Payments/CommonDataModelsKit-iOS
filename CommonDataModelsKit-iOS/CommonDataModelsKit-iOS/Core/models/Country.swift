@@ -4,6 +4,7 @@
 //
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
+import Foundation
 
 /// Country model.
 @objcMembers public final class Country: NSObject {

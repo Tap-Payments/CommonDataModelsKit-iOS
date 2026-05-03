@@ -4,6 +4,7 @@
 //
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
+import Foundation
 
 @objcMembers
 @objc(CheckoutOrder) public final class Order:NSObject, IdentifiableWithString, Codable {

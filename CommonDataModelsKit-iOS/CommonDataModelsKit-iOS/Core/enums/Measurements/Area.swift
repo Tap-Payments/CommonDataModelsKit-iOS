@@ -4,7 +4,7 @@
 //
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
-
+import Foundation
 /// Area measurement unit.
 @objc(MeasurementArea) public enum Area: Int, CaseIterable {
     

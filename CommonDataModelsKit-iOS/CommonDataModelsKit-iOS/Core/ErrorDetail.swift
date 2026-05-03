@@ -7,6 +7,8 @@
 
 /// Error detail model.
 import TapAdditionsKitV2
+import Foundation
+
 @objcMembers public final class ErrorDetail: NSObject {
     
     // MARK: - Public -

@@ -5,6 +5,9 @@
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
 
+import ObjectiveC
+import Foundation
+
 /// Address model.
 @objc public final class Address: NSObject,Decodable {
     

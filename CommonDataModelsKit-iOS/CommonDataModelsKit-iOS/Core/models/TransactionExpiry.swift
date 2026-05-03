@@ -4,6 +4,7 @@
 //
 //  Created by Osama Rabie on 06/02/2020.
 //
+import Foundation
 
 @objcMembers
 @objc(CheckoutTransactionExpiry) public final class TransactionExpiry: NSObject{

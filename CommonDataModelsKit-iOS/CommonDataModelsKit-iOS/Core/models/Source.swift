@@ -7,6 +7,7 @@
 
 
 import TapCardVlidatorKit_iOS
+import Foundation
 
 /// Source model.
 @objcMembers

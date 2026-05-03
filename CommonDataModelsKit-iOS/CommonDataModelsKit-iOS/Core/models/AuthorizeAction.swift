@@ -4,6 +4,7 @@
 //
 //  Copyright © 2019 Tap Payments. All rights reserved.
 //
+import Foundation
 
 /// Authorize action model to state what to do with the authorized amount after being authorized for a certain time interval
 /// - tag: AuthorizeAction

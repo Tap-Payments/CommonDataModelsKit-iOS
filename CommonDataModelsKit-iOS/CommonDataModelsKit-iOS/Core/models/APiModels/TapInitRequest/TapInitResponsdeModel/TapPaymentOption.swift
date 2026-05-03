@@ -9,6 +9,7 @@
 import Foundation
 import struct PassKit.PKPaymentNetwork
 import TapCardVlidatorKit_iOS
+import UIKit
 /// Payment Option model.
 public struct PaymentOption: IdentifiableWithString {
     
